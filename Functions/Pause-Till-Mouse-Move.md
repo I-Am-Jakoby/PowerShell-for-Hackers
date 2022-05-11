@@ -83,8 +83,9 @@ $o=New-Object -ComObject WScript.Shell
 
 * [Hak5](https://hak5.org/)
 * [MG](https://github.com/OMG-MG)
+* [UberGuidoZ](https://github.com/UberGuidoZ)
 * [0iphor13](https://github.com/0iphor13)
-* [PhilSutter](https://github.com/PhilSutter)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
