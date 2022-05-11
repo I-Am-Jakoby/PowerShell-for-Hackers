@@ -5,7 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#Description">Description</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#The-Function">Getting Started</a></li>
     <li><a href="#Contact">Contact</a></li>
     <li><a href="#Acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -23,6 +23,8 @@ Using a while loop it will check the position every X seconds as indicated by th
 If the position of the cursor has not changed the capslock button will be pressed 
 This is to stop the screen from sleeping and use the capslock light as an indicator the function is still waiting 
 When a mouse movement is detected the function will break out of the loop and resume the script 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## The Function
 
