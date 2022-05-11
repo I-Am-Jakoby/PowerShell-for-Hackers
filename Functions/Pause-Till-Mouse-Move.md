@@ -6,7 +6,6 @@
   <ol>
     <li><a href="#Description">Description</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#Contributing">Contributing</a></li>
     <li><a href="#Contact">Contact</a></li>
     <li><a href="#Acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -50,17 +49,6 @@ $o=New-Object -ComObject WScript.Shell
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Executing program
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Contributing
-
-All contributors names will be listed here
-
-I am Jakoby
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
