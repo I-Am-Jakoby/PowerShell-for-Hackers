@@ -26,6 +26,7 @@ When a mouse movement is detected the function will break out of the loop and re
 
 ## The Function
 
+```
 function Pause-Script{
 Add-Type -AssemblyName System.Windows.Forms
 $originalPOS = [System.Windows.Forms.Cursor]::Position.X
@@ -41,16 +42,8 @@ $o=New-Object -ComObject WScript.Shell
         }
     }
 }
+```
 
-### Dependencies
-
-* Windows 10,11
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-### Executing program
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -76,7 +69,7 @@ $o=New-Object -ComObject WScript.Shell
     <img src="https://img.shields.io/badge/YouTube-I_am_Jakoby-red">
   </a>
 
-  Project Link: [https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/BashBunny/Payloads/BB-JumpScare)
+  Project Link: [https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 </p>
 
 
