@@ -45,7 +45,7 @@ $o=New-Object -ComObject WScript.Shell
     }
 }
 ```
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
