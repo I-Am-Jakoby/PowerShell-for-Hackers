@@ -61,7 +61,6 @@ please feel free to reference this collection of functions we have gathered here
 ## Acknowledgments
 
 * [Hak5](https://hak5.org/)
-* [MG](https://github.com/OMG-MG)
 * [UberGuidoZ](https://github.com/UberGuidoZ)
 
 
