@@ -25,13 +25,10 @@ please feel free to reference this collection of functions we have gathered here
 * The functions themselves will be provided in easy copy and paste format 
 * Examples of payloads that have used these functions will also be available  
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## The Functions
 
 [Detect Mouse Movement](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Detect-Mouse-Movement.md)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -59,10 +56,6 @@ please feel free to reference this collection of functions we have gathered here
 
   [Project Link](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 </p>
-
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
