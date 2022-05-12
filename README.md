@@ -1,2 +1,79 @@
-# PowerShell-for-Hackers
-This repository is a collection of powershell functions every hacker should know
+![Logo](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/logo-170-px.png?raw=true)
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#Description">Description</a></li>
+    <li><a href="#The-Functions">The Functions</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#Acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+# PowerShell Functions For Hackers
+
+Detecting the mousemovent of a terget could be helpful in 2 different situations. 
+Finding out if they just came back to their PC 
+or finding out if they stepped away from their PC 
+
+## Description
+
+This is a collection of powershell functions that should be added to your arsenal. 
+If you are looking to write your own payloads 
+please feel free to reference the collection of functions we have gathered here
+
+* There will be a description of it's intended purpose 
+* The functions themselves will be provided 
+* Examples of payloads that have used those functions will also be available  
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## The Functions
+
+[Detect Mouse Movement](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Detect-Mouse-Movement.md)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+<div><h2>I am Jakoby</h2></div>
+  <p><br/>
+  
+  <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
+  
+  <a href="https://github.com/I-Am-Jakoby/">
+    <img src="https://img.shields.io/badge/GitHub-I--Am--Jakoby-blue">
+  </a>
+  
+  <a href="https://www.instagram.com/i_am_jakoby/">
+    <img src="https://img.shields.io/badge/Instagram-i__am__jakoby-red">
+  </a>
+  
+  <a href="https://twitter.com/I_Am_Jakoby/">
+    <img src="https://img.shields.io/badge/Twitter-I__Am__Jakoby-blue">
+  </a>
+  
+  <a href="https://www.youtube.com/c/IamJakoby/">
+    <img src="https://img.shields.io/badge/YouTube-I_am_Jakoby-red">
+  </a>
+
+  [Project Link](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
+</p>
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Hak5](https://hak5.org/)
+* [MG](https://github.com/OMG-MG)
+* [UberGuidoZ](https://github.com/UberGuidoZ)
+* [0iphor13](https://github.com/0iphor13)
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
