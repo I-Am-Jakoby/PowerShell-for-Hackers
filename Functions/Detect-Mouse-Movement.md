@@ -35,7 +35,7 @@ This is helpful if you are trying to determine if the target is away to run a sc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## The Function
+## The Functions
 
 ```
 function Target-Comes {
