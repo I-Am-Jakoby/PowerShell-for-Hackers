@@ -22,15 +22,22 @@ or finding out if they stepped away from their PC
 
 ### [Target-Comes] 
 In this first function the position of the cursor will be checked every 3 seconds
+
 If the position of the cursor has not changed the capslock button will be pressed every 3 seconds as well
+
 This is to stop the screen from sleeping and use the capslock light as an indicator the function is still waiting 
-When the position of the cursor is different the function will break out of the loop and resume the script 
+
+When the position of the cursor is different the function will break out of the loop and resume the script
+
 This is helpful if you are wanting to run a script once they return to their computer
 
 ### [Target-Leaves] 
 In the second function the position of the cursor will be checked 
+
 Then the script will sleep for the number of seconds defined by the $PauseTime variable 
+
 If the cursor is in the same position it will break out of the function and continue the script
+
 This is helpful if you are trying to determine if the target is away to run a script while they are gone
 
 <p align="right">(<a href="#top">back to top</a>)</p>
