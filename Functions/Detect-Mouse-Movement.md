@@ -12,7 +12,7 @@
   </ol>
 </details>
 
-# Pause-Till-Mouse-Move
+# Detect-Mouse-Movement
 
 A function to pause a script until a mouse movement is detected. This is useful if you want to wait for an action to take place for 
 when the target is in front of their PC. 
