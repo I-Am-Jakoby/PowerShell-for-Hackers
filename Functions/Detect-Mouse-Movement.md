@@ -5,7 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#Description">Description</a></li>
-    <li><a href="#The-Function">The Function</a></li>
+    <li><a href="#The-Function">The Functions</a></li>
     <li><a href="#Examples">Examples</a></li>
     <li><a href="#Contact">Contact</a></li>
     <li><a href="#Acknowledgments">Acknowledgments</a></li>
@@ -42,6 +42,25 @@ $o=New-Object -ComObject WScript.Shell
         }
         else {
             $o.SendKeys("{CAPSLOCK}");Start-Sleep -Seconds $pauseTime
+        }
+    }
+}
+```
+
+```
+function Target-Leaves {
+Add-Type -AssemblyName System.Windows.Forms
+$o=New-Object -ComObject WScript.Shell
+
+    while (1) {
+        $pauseTime = 10
+	  $originalPOS = [System.Windows.Forms.Cursor]::Position.X
+	  Start-Sleep -Seconds 3
+        if ([Windows.Forms.Cursor]::Position.X -eq $originalPOS){
+            break
+        }
+        else {
+            Start-Sleep -Seconds $pauseTime
         }
     }
 }
