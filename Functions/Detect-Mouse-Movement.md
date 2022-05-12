@@ -14,7 +14,7 @@
 
 # Detect-Mouse-Movement
 
-Detecting the mousemovent of a target could be helpful in 2 different situations. 
+Detecting the mouse movement of a target could be helpful in 2 different situations. 
 Finding out if they just came back to their PC 
 or finding out if they stepped away from their PC 
 
