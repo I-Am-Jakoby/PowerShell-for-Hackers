@@ -63,7 +63,7 @@ please feel free to reference this collection of functions we have gathered here
 * [Hak5](https://hak5.org/)
 * [MG](https://github.com/OMG-MG)
 * [UberGuidoZ](https://github.com/UberGuidoZ)
-* [0iphor13](https://github.com/0iphor13)
+
 
 
 
