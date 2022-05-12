@@ -78,7 +78,9 @@ $o=New-Object -ComObject WScript.Shell
 
 ## Examples
 
-Listed below are payloads that have used this function
+Listed below are payloads that have used one of these functions:
+
+[Acid Burn](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-AcidBurn)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
