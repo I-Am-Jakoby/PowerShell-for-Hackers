@@ -6,6 +6,7 @@
   <ol>
     <li><a href="#Description">Description</a></li>
     <li><a href="#The-Function">The Function</a></li>
+    <li><a href="#Examples">Examples</a></li>
     <li><a href="#Contact">Contact</a></li>
     <li><a href="#Acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -46,6 +47,11 @@ $o=New-Object -ComObject WScript.Shell
 }
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## Examples
+
+Listed below are payloads that have used this function
 
 <!-- CONTACT -->
 ## Contact
