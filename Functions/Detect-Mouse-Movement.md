@@ -53,6 +53,9 @@ $o=New-Object -ComObject WScript.Shell
 
 Listed below are payloads that have used this function
 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- CONTACT -->
 ## Contact
 
