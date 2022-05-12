@@ -14,23 +14,32 @@
 
 # Detect-Mouse-Movement
 
-A function to pause a script until a mouse movement is detected. This is useful if you want to wait for an action to take place for 
-when the target is in front of their PC. 
+Detecting the mousemovent of a terget could be helpful in 2 different situations. 
+Finding out if they just came back to their PC 
+or finding out if they stepped away from their PC 
 
 ## Description
 
-This function will get the position of the mouse cursor when the script is ran and save it as $originalPOS
+These functions will get the position of the mouse cursor when the script is ran and save it as $originalPOS
 Using a while loop it will check the position every X seconds as indicated by the $pauseTime variable
-If the position of the cursor has not changed the capslock button will be pressed 
+
+[Target-Comes] In this first function the position of the cursor will be checked every 3 seconds
+If the position of the cursor has not changed the capslock button will be pressed every 3 seconds as well
 This is to stop the screen from sleeping and use the capslock light as an indicator the function is still waiting 
-When a mouse movement is detected the function will break out of the loop and resume the script 
+When the position of the cursor is different the function will break out of the loop and resume the script 
+This is helpful if you are wanting to run a script once they return to their computer
+
+[Target-Leaves] In the second function the position of the cursor will be checked 
+Then the script will sleep for the number of seconds defined by the $PauseTime variable 
+If the cursor is in the same position it will break out of the function and continue the script
+This is helpful if you are trying to determine if the target is away to run a script while they are gone
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## The Function
 
 ```
-function Pause-Script{
+function Target-Comes {
 Add-Type -AssemblyName System.Windows.Forms
 $originalPOS = [System.Windows.Forms.Cursor]::Position.X
 $o=New-Object -ComObject WScript.Shell
@@ -53,14 +62,14 @@ Add-Type -AssemblyName System.Windows.Forms
 $o=New-Object -ComObject WScript.Shell
 
     while (1) {
-        $pauseTime = 10
+        $pauseTime = 5
 	  $originalPOS = [System.Windows.Forms.Cursor]::Position.X
-	  Start-Sleep -Seconds 3
+	  Start-Sleep -Seconds $pauseTime
         if ([Windows.Forms.Cursor]::Position.X -eq $originalPOS){
             break
         }
         else {
-            Start-Sleep -Seconds $pauseTime
+            Start-Sleep -Seconds 1
         }
     }
 }
