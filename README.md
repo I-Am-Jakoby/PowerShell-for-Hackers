@@ -13,19 +13,17 @@
 
 # PowerShell Functions For Hackers
 
-Detecting the mousemovent of a terget could be helpful in 2 different situations. 
-Finding out if they just came back to their PC 
-or finding out if they stepped away from their PC 
+A place where hackers come together to share their knowledge
 
 ## Description
 
 This is a collection of powershell functions that should be added to your arsenal. 
 If you are looking to write your own payloads 
-please feel free to reference the collection of functions we have gathered here
+please feel free to reference this collection of functions we have gathered here
 
-* There will be a description of it's intended purpose 
-* The functions themselves will be provided 
-* Examples of payloads that have used those functions will also be available  
+* There will be a description of the payloads intended purpose 
+* The functions themselves will be provided in easy copy and paste format 
+* Examples of payloads that have used these functions will also be available  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
