@@ -13,7 +13,11 @@
 
 # PowerShell Functions For Hackers
 
-A place where hackers come together to share their knowledge
+A place where hackers come together to share their knowledge.
+
+To submit your own function use the template [HERE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/template.md)
+
+Then submit a pull request for review.
 
 ## Description
 
