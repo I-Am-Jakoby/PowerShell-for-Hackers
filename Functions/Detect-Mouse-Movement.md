@@ -18,7 +18,8 @@
 
 Detecting the mouse movement of a target could be helpful in 2 different situations. 
 Finding out if they just came back to their PC 
-or finding out if they stepped away from their PC 
+or finding out if they stepped away from their PC. This function will pause your script 
+Until one of these conditions are met. 
 
 ## The Functions
 
