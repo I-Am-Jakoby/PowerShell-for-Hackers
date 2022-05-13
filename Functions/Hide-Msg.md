@@ -25,7 +25,7 @@ This function can be used to hide a secret message in an image
 In this function you will provide the path of your image and your secret message using the syntax below
 
 ```
-Hide-Msg -Path "C:\Users\micha\Desktop\sm.jpg" -Message "this is your secret message"
+Hide-Msg -Path "C:\Users\user\Desktop\secret.jpg" -Message "this is your secret message"
 
 or
 
