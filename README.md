@@ -28,7 +28,7 @@ please feel free to reference this collection of functions we have gathered here
 ## The Functions
 
 [Detect Mouse Movement](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Detect-Mouse-Movement.md)
-  - Used to find out if target stepped away or came back to their PC.
+- Used to find out if target stepped away or came back to their PC.
 
 <!-- CONTACT -->
 ## Contact
