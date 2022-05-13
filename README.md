@@ -38,7 +38,7 @@ please feel free to reference this collection of functions we have gathered here
 (Used to set the volume of the targets PC.)
 
 [Hide-Msg](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Hide-Msg.md)
-(Used to hide a secret message in an image.)
+(Use steganography to hide a secret message in an image.)
 
 [Speak](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Speak.md)
 (Used to turn text to speech and talk through your targets speakers.)
