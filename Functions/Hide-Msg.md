@@ -22,10 +22,14 @@ This function can be used to hide a secret message in an image
 
 ### [Hide-Msg] 
 
-In this function we will create an object to allow us to use the Send Keys method to either raise or lower the volume using the following syntax
+In this function you will provide the path of your image and your secret message using the syntax below
+
 ```
-Set-Volume max
-Set-Volume off 
+Hide-Msg -Path "C:\Users\micha\Desktop\sm.jpg" -Message "this is your secret message"
+
+or
+
+"C:\Users\user\Desktop\secret.jpg" | Hide-Msg -Message "this is your secret message"
 ```
 
 ```
@@ -35,7 +39,7 @@ function Hide-Msg {
 	param (
 	
 	[Parameter (Mandatory = $True, ValueFromPipeline = $True)]
-	[string]$ImagePath,
+	[string]$Path,
 
 	[Parameter (Mandatory = $False)]
 	[string]$Message 
@@ -43,7 +47,7 @@ function Hide-Msg {
 
 	echo "`n`n $Message" > $Env:USERPROFILE\Desktop\foo.txt
 
-	cmd.exe /c copy /b "$ImagePath" + "$Env:USERPROFILE\Desktop\foo.txt" "$ImagePath"
+	cmd.exe /c copy /b "$Path" + "$Env:USERPROFILE\Desktop\foo.txt" "$Path"
 
 	rm $Env:USERPROFILE\Desktop\foo.txt -r -Force -ErrorAction SilentlyContinue
 
@@ -59,7 +63,7 @@ Listed below are payloads that have used one of these functions:
 
 [Acid Burn](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-AcidBurn)
 
-[JumpScare](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-JumpScare)
+[WallPaper-Troll](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-Wallpaper-Troll)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
