@@ -47,7 +47,7 @@ please feel free to reference this collection of functions we have gathered here
 (This function is to erase any trace of you after wreaking havok on your target.)
 
 [If-Admin](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/If-Admin.md)
-(This function is test if your target is in the Administrator group, If $True run a secondary function.)
+(This function is to test if your target is in the Administrator group, If $True run a secondary function.)
 
 <!-- CONTACT -->
 ## Contact
