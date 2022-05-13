@@ -33,6 +33,10 @@ please feel free to reference this collection of functions we have gathered here
 [Set-Volume](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Set-Volume.md)
 (Used to set the volume of the targets PC.)
 
+[Hide-Msg](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Hide-Msg.md)
+(Used to hide a secret message in an image.)
+
+
 <!-- CONTACT -->
 ## Contact
 
