@@ -12,7 +12,7 @@
   </ol>
 </details>
 
-# Steganography
+# Hide Message
 
 ## Description
 
