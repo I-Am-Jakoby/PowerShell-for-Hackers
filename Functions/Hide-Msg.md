@@ -29,18 +29,24 @@ Set-Volume off
 ```
 
 ```
-function Set-Volume {
-Param(
-    [Parameter(Position=0)]
-    [string[]]
-    $vol
-)
-$volume = switch ( $vol )
-{
-    "max"  { 175 }
-    "off" { 174 }
-}
-$k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] $volume)}
+function Hide-Msg {
+
+	[CmdletBinding()]
+	param (
+	
+	[Parameter (Mandatory = $True, ValueFromPipeline = $True)]
+	[string]$ImagePath,
+
+	[Parameter (Mandatory = $False)]
+	[string]$Message 
+	)
+
+	echo "`n`n $Message" > $Env:USERPROFILE\Desktop\foo.txt
+
+	cmd.exe /c copy /b "$ImagePath" + "$Env:USERPROFILE\Desktop\foo.txt" "$ImagePath"
+
+	rm $Env:USERPROFILE\Desktop\foo.txt -r -Force -ErrorAction SilentlyContinue
+
 }
 ```
 
