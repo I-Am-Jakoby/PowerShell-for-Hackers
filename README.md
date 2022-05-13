@@ -43,6 +43,9 @@ please feel free to reference this collection of functions we have gathered here
 [Speak](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Speak.md)
 (Used to turn text to speech and talk through your targets speakers.)
 
+[Get-GeoLocation](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Get-GeoLocation.md)
+(Used to get the GeoLocation of your target.)
+
 <!-- CONTACT -->
 ## Contact
 
