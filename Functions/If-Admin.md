@@ -12,7 +12,7 @@
   </ol>
 </details>
 
-# IF-Admin
+# If-Admin
 
 ## Description
 
