@@ -55,7 +55,7 @@ please feel free to reference this collection of functions we have gathered here
 [DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)
 (This function is used to upload files to DropBox.)
 
-[DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)
+[PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)
 (This function is used to convert PowerShell scripts to a .BAT file.)
 
 <!-- CONTACT -->
