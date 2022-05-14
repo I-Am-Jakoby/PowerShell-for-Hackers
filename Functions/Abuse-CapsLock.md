@@ -64,16 +64,16 @@ $o=New-Object -ComObject WScript.Shell
 }
 ```
 
-### [FUNCTION-NAME] 
+### [Caps-Indicator] 
 
 This function is meant to serve as an indicator for stages of your scripts 
 Using the following function will make the capslock light blink on and off the number of times the variable $num indicates
 The blinking will be in intervals of X amount of seconds as indicated by the $pause variable 
 Use the following syntax:
-(blinks 5 times pausing for a second between each) 
+(blinks 3 times pausing for a second between each) 
 
 ```
-Caps-Indicator -pause 1 -num 5
+Caps-Indicator -pause 1 -num 3
 ```
 
 ```
