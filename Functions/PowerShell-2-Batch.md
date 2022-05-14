@@ -20,7 +20,7 @@ This function will convert a PowerShell script to a Batch file
 
 ## The Function
 
-### [FUNCTION-NAME] 
+### [PowerShell-2-Batch] 
 
 Using this function will convert your powershell payload over to Base64 and then change the extension on it to be a .BAT file
 Make the conversion with this function using the following syntax: 
