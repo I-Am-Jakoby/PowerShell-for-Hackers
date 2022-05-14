@@ -40,7 +40,10 @@ $key.SendKeys('{CapsLock}')
 
 ### [Stop-Sleep] 
 
-A short description of how your function works
+This function will ensure your targets screen will not go to sleep
+The caplock light will serve as an indicator that the script is still running 
+This script uses the previous Caps-Off script to make sure the capslock is turned back off 
+You will need to include both functions for this one to work
 
 ```
 function Stop-Sleep {
