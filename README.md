@@ -52,6 +52,9 @@ please feel free to reference this collection of functions we have gathered here
 [Invoke-WebRequest](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Invoke-WebRequest.md)
 (This function is used to either download or upload files or data.)
 
+[DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)
+(This function is used to either download or upload files or data.)
+
 <!-- CONTACT -->
 ## Contact
 
