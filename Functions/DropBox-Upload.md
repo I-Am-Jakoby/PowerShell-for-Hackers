@@ -49,7 +49,7 @@ param (
 [Parameter (Mandatory = $True, ValueFromPipeline = $True)]
 [string]$FileName
 ) 
-$DropBoxAccessToken = ""   # Replace with your DropBox Access Token
+$DropBoxAccessToken = "YOUR-DROPBOX-ACCESS-TOKEN-HERE"   # Replace with your DropBox Access Token
 $TargetFilePath="/$FileName"
 $SourceFilePath="$env:TMP\$FileName"
 $arg = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
