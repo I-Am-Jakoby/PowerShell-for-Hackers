@@ -58,6 +58,10 @@ please feel free to reference this collection of functions we have gathered here
 [PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)
 (This function is used to convert PowerShell scripts to a .BAT file.)
 
+[Abuse-CapsLock](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Abuse-CapsLock.md)
+(This functions lets you use the caplock to stop the screen from sleeping, or use the capslock light as an indicator for script progress.)
+
+
 <!-- CONTACT -->
 ## Contact
 
