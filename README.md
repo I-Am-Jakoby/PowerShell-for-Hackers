@@ -32,34 +32,34 @@ please feel free to reference this collection of functions we have gathered here
 ## The Functions
 
 [Detect Mouse Movement](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Detect-Mouse-Movement.md)
-_____(Used to find out if target stepped away or came back to their PC.)
+(Used to find out if target stepped away or came back to their PC.)
 
 [Set-Volume](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Set-Volume.md)
-____________________(Used to set the volume of the targets PC.)
+(Used to set the volume of the targets PC.)
 
 [Hide-Msg](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Hide-Msg.md)
-______________________(Use steganography to hide a secret message in an image.)
+(Use steganography to hide a secret message in an image.)
 
 [Speak](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Speak.md)
-__________________________(Used to turn text to speech and talk through your targets speakers.)
+(Used to turn text to speech and talk through your targets speakers.)
 
 [Clean-Exfil](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Clean-Exfil.md)
-______________________(This function is to erase any trace of you after wreaking havok on your target.)
+(This function is to erase any trace of you after wreaking havok on your target.)
 
 [If-Admin](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/If-Admin.md)
-________________________(This function is to test if your target is in the Administrator group, If $True run a secondary function.)
+(This function is to test if your target is in the Administrator group, If $True run a secondary function.)
 
 [Invoke-WebRequest](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Invoke-WebRequest.md)
-____________(This function is used to either download or upload files or data.)
+(This function is used to either download or upload files or data.)
 
 [DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)
-_______________(This function is used to upload files to DropBox.)
+(This function is used to upload files to DropBox.)
 
 [PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)
-_____________(This function is used to convert PowerShell scripts to a .BAT file.)
+(This function is used to convert PowerShell scripts to a .BAT file.)
 
 [Abuse-CapsLock](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Abuse-CapsLock.md)
-________________(Use the caplock to stop the screen from sleeping, or use the capslock light to indicate script progress.)
+(Use the caplock to stop the screen from sleeping, or use the capslock light to indicate script progress.)
 
 
 <!-- CONTACT -->
