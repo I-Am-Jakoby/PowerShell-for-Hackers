@@ -49,6 +49,9 @@ please feel free to reference this collection of functions we have gathered here
 [If-Admin](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/If-Admin.md)
 (This function is to test if your target is in the Administrator group, If $True run a secondary function.)
 
+[Invoke-WebRequest](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Invoke-WebRequest.md)
+(This function is used to either download or upload files or data.)
+
 <!-- CONTACT -->
 ## Contact
 
