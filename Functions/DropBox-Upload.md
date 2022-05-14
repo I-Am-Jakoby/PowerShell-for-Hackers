@@ -29,7 +29,7 @@ Follow this [GUIDE](https://developers.dropbox.com/oauth-guide) for setting up y
 Use the following syntax for your upload:
 
 ```
-DropBox-Upload -SourceFilePath "file.txt"
+DropBox-Upload -FileName "file.txt"
 
 or
 
