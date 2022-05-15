@@ -128,7 +128,7 @@ netsh wlan add profile filename="$($profilefile)"
 
 
 ## Examples 
-(Examples of script that have used your function) - delete this line
+
 Listed below are payloads that have used one of these functions:
 
 [PineApple](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-PineApple)
