@@ -34,7 +34,7 @@ function YOUR-FUNCTION {
 
 
 ## Examples 
-(Examples of script that have used your function) - delete this line
+[//]: # (Examples of scripts that have used your function) 
 Listed below are payloads that have used one of these functions:
 
 [Acid Burn](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-AcidBurn)
