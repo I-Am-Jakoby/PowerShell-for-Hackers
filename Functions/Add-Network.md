@@ -26,7 +26,7 @@ This function will accept 3 parameters, 2 of which are mandatory
 
 You always have to provide the $SSID to give your network a name 
 
-The $Security parameter is also mandatory only takes the value of "secure" or "open 
+The $Security parameter is also mandatory only takes the value of "t"(true) or "f"(false) 
 
 This will tell the function whether or not you need a wifi password for your network 
 
@@ -37,8 +37,11 @@ Set-up a new network profile on your targets PC using the following syntax:
 ```
 For a network profile using a Password use:
 
-Add-NetWork -SSID "wifi-name" -security "secure" -PW "wifi-password"
+Add-NetWork -SSID "wifi-name" -security "t" -PW "wifi-password"
 
+For a network profile NOT using a Password use:
+
+Add-NetWork -SSID "wifi-name" -security "f"
 
 ```
 
@@ -63,7 +66,7 @@ param (
 
 $sec = switch ( $Security )
 {
-    "secure"  { 
+    "t"  { 
 "
         <security>
             <authEncryption>
@@ -79,7 +82,7 @@ $sec = switch ( $Security )
         </security>
 "
 }
-    "open" { 
+    "f" { 
 
 "
         <security>
@@ -128,9 +131,7 @@ netsh wlan add profile filename="$($profilefile)"
 (Examples of script that have used your function) - delete this line
 Listed below are payloads that have used one of these functions:
 
-[Acid Burn](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-AcidBurn)
-
-[JumpScare](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-JumpScare)
+[PineApple](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-PineApple)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
