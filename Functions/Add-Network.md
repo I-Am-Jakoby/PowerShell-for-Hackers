@@ -37,11 +37,11 @@ Set-up a new network profile on your targets PC using the following syntax:
 ```
 For a network profile using a Password use:
 
-Add-NetWork -SSID "wifi-name" -security "t" -PW "wifi-password"
+Add-NetWork -SSID wifi-name -security t -PW wifi-password
 
 For a network profile NOT using a Password use:
 
-Add-NetWork -SSID "wifi-name" -security "f"
+Add-NetWork -SSID wifi-name -security f
 
 ```
 
