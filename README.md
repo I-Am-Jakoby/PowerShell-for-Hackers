@@ -53,7 +53,7 @@ please feel free to reference this collection of functions we have gathered here
 (This function is used to either download or upload files or data.)
 
 [DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)
-(This function is used to upload files to DropBox.)
+(This function is used to upload "aquired" files to DropBox.)
 
 [PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)
 (This function is used to convert PowerShell scripts to a .BAT file.)
