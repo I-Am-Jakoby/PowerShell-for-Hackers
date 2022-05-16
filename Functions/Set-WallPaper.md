@@ -25,7 +25,7 @@ This function will set the targets wallpaper to the provided image
 Using the following syntax will set the targets desktop wallpaper to an image of your choosing:
 
 ```
-
+Set-WallPaper -Image "$Env:USERPROFILE\Desktop\$ImageName.jpg" -Style Center
 ```
 
 ```
