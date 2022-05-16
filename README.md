@@ -73,6 +73,9 @@ please feel free to reference this collection of functions we have gathered here
 [Get-DefaultBrowser](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DefaultBrowser.md)
 (Use this function to get the default browser of your targets PC.)
 
+[Wifi-Info](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Wifi-Info.md)
+(Use these functions to enumerate your targets wifi and get their wifi passwords.)
+
 
 <!-- CONTACT -->
 ## Contact
