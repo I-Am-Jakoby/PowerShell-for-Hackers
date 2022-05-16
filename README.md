@@ -67,6 +67,9 @@ please feel free to reference this collection of functions we have gathered here
 [Add-Network](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Add-Network.md)
 (Use this function to add a network profile to your targets PC. Either SECURED or OPEN.)
 
+[Get-DefaultBrowser](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DefaultBrowser.md)
+(Use this function to get the default browser of your targets PC.)
+
 
 <!-- CONTACT -->
 ## Contact
