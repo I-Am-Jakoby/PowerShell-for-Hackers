@@ -73,6 +73,9 @@ please feel free to reference this collection of functions we have gathered here
 [Get-DefaultBrowser](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DefaultBrowser.md)
 (Use this function to get the default browser of your targets PC.)
 
+[UAC-AV-Bypass](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/UAC-AV-Bypass.md)
+(Use this function to get around the UAC and anti virus.)
+
 [UAC-Bypass](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/UAC-Bypass.md)
 (Use this snippet to open a powershell window with Admin privledges.)
 
