@@ -20,7 +20,6 @@
 <#
 .SYNOPSIS
   This is a powershell cmdlet that will convert a script to Base64 then format it into ducky script ready payload
-
 .DESCRIPTION 
   This is a cmdlet that takes a file path and converts the contents of that file to a Base64 string 
   That Base64 string is then formatted into ducky script ready to be used with the OMG devices or rubber ducky
@@ -34,7 +33,6 @@
   Use the "-Title" tag to add a payload title to the header   
   Use the "-Author" tag to add an Author to the header
   Use the "-Description" tag to add a brief description to the header
-
 .PARAMETER Source
   (Mandatory = $True)
   Provide the exact path to the file to be converted
@@ -50,15 +48,12 @@
 .PARAMETER Delay
   (Mandatory = $False)
   Provide a custom delay between commands  
-
 .PARAMETER Title
   (Mandatory = $False)
   Provide the name of the payload 
-
 .PARAMETER Author
   (Mandatory = $False)
   Provide the name of the author
-
 .PARAMETER Description
   (Mandatory = $False)
   Provide a brief description 
@@ -112,17 +107,11 @@ function PS-2-Ducky {
 	
 	$FilePath = ($Path+"\"+$File+".txt")
 
-	$FilePath
-
 	$converted = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes((Get-Content -Path $Source -Raw -Encoding UTF8)))
 
 	$numChar = $converted.length
 	$Time = $numChar/140 
 	$estTime = [math]::Round($Time,2)
-	$incriment = 275
-
-	$pre = "STRING powershell -enc "
-	$string = "STRING "
 
 	function splitLines{
 		While ($converted)
@@ -147,12 +136,11 @@ function PS-2-Ducky {
 	echo "DELAY $Delay" >> $FilePath
 	echo "ENTER" >> $FilePath
 	echo "DELAY $Delay" >> $FilePath
-	echo $pre >> $FilePath
+	echo "STRING powershell -enc " >> $FilePath
 	echo "DELAY $Delay" >> $FilePath
 
-	echo $string$converted >> $FilePath
+	echo "STRING $converted" >> $FilePath
 
 	echo "DELAY $Delay" >> $FilePath
 	echo "ENTER" >> $FilePath
 }
-
