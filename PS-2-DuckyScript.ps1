@@ -24,12 +24,12 @@
 .DESCRIPTION 
   This is a cmdlet that takes a file path and converts the contents of that file to a Base64 string 
   That Base64 string is then formatted into ducky script ready to be used with the OMG devices or rubber ducky
-  The output of that conversion will be saved to the desktop by default 
+  The output of that conversion will be saved to the desktop by default
+  Estimated time to execute script is calculate and provided at the top of the output file 
   Use the "-Source" tag to provide a path to your script to convert  
   Use the "-Path" tag to change the directory where the payload is saved to
   The name of the file will be "converted.txt" by default
   Use the "-File" tag to change the name of the file 
-  Estimated time to execute script is calculate and provided at the top of the output file
   Use the "-Delay" tag to add a custom delay between commands
   Use the "-Title" tag to add a payload title to the header   
   Use the "-Author" tag to add an Author to the header
