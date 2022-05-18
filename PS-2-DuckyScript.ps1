@@ -33,15 +33,15 @@
   Use the "-Author" tag to add an Author to the header
   Use the "-Description" tag to add a brief description to the header
 
-.PARAMETER source
+.PARAMETER Source
   (Mandatory = $True)
   Provide the exact path to the file to be converted
  
-.PARAMETER output
+.PARAMETER Path
   (Mandatory = $False)
   Provide the exact path to where the output file will be saved 
   
-.PARAMETER FileName
+.PARAMETER File
   (Mandatory = $False)
   Provide the name of the file   
 
