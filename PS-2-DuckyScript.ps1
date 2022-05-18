@@ -19,7 +19,7 @@
 
 <#
 .SYNOPSIS
-  This is a powershell cmdlet that will convert a script to Base64 then format it into ducky script 
+  This is a powershell cmdlet that will convert a script to Base64 then format it into ducky script ready payload
 
 .DESCRIPTION 
   This is a cmdlet that takes a file path and converts the contents of that file to a Base64 string 
@@ -29,7 +29,9 @@
   The name of the file will be "converted.txt" by default
   Use the "-File" tag to change the name of the file 
   Estimated time to execute script is calculate and provided at the top of the output file
-  
+  Use the "-Title" tag to add a payload title to the header   
+  Use the "-Author" tag to add an Author to the header
+  Use the "-Description" tag to add a brief description to the header
 
 .PARAMETER source
   (Mandatory = $True)
@@ -42,30 +44,53 @@
 .PARAMETER FileName
   (Mandatory = $False)
   Provide the name of the file   
+
+.PARAMETER Title
+  (Mandatory = $False)
+  Provide the name of the payload 
+
+.PARAMETER Author
+  (Mandatory = $False)
+  Provide the name of the author
+
+.PARAMETER Description
+  (Mandatory = $False)
+  Provide a brief description 
   
 .EXAMPLE
-  B64 -source "C:\Users\USER\Desktop\script.ps1" -output "C:\Users\User\Desktop" -File example
-  B64 -so "C:\Users\USER\Desktop\script.ps1" -out "C:\Users\User\Desktop" -File example
-  B64 -so "C:\Users\USER\Desktop\script.ps1" -File example
-  "C:\Users\USER\Desktop\script.ps1" | B64 -File example
+  B64 -source "C:\Users\USER\Desktop\script.ps1" -Path "C:\Users\User\Desktop" -File example -Title Super-Payload -Author Jakoby -Description "Does cool stuff"
+  B64 -s "C:\Users\USER\Desktop\script.ps1" -p "C:\Users\User\Desktop" -f example -t Super-Payload -a Jakoby -d "Does cool stuff"
+  "C:\Users\USER\Desktop\script.ps1" | B64 -f example -p "C:\Users\User\Desktop" -f example -t Super-Payload -a Jakoby -d "Does cool stuff"
   
 #>
 
-function B64{
+function PS-2-Ducky {
 	[CmdletBinding()]
 	param (
 	
 	[Parameter (Mandatory = $True, ValueFromPipeline = $True)]
-	[Alias("source")]
-	[string]$so,
+	[Alias("s")]
+	[string]$Source,
 
 	[Parameter (Mandatory = $False)]
-	[Alias("output")]
+	[Alias("p")]
 	[string]$Path, 
 
 	[Parameter (Mandatory = $False)]
-	[Alias("FileName")]
-	[string]$File 
+	[Alias("f")]
+	[string]$File, 
+
+	[Parameter (Mandatory = $False)]
+	[Alias("t")]
+	[string]$Title, 
+
+	[Parameter (Mandatory = $False)]
+	[Alias("a")]
+	[string]$Author, 
+
+	[Parameter (Mandatory = $False)]
+	[Alias("d")]
+	[string]$Description 
 
 	)	
 
@@ -77,7 +102,7 @@ function B64{
 
 	$FilePath
 
-	$converted = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes((Get-Content -Path $so -Raw -Encoding UTF8)))
+	$converted = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes((Get-Content -Path $Source -Raw -Encoding UTF8)))
 
 	$numChar = $converted.length
 	$Time = $numChar/140 
@@ -97,7 +122,12 @@ function B64{
 
 	$lSplit = splitLines
 
-	echo "REM --> $numChar Characters: Estimated $estTime seconds to execute" >> $FilePath
+	echo "REM --> $numChar Characters: Estimated $estTime seconds to execute `n" >> $FilePath
+
+	if ($Title)        { echo "REM		Title:       $Title"       >> $FilePath}
+	if ($Author)       { echo "REM		Author:      $Author"      >> $FilePath}
+	if ($Description)  { echo "REM		Description: $Description" >> $FilePath}
+
 	echo "" >> $FilePath
 	echo "GUI r" >> $FilePath
 	echo "DELAY 250" >> $FilePath
