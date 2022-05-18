@@ -20,6 +20,7 @@
 <#
 .SYNOPSIS
   This is a powershell cmdlet that will convert a script to Base64 then format it into ducky script ready payload
+  
 .DESCRIPTION 
   This is a cmdlet that takes a file path and converts the contents of that file to a Base64 string 
   That Base64 string is then formatted into ducky script ready to be used with the OMG devices or rubber ducky
@@ -33,6 +34,7 @@
   Use the "-Title" tag to add a payload title to the header   
   Use the "-Author" tag to add an Author to the header
   Use the "-Description" tag to add a brief description to the header
+  
 .PARAMETER Source
   (Mandatory = $True)
   Provide the exact path to the file to be converted
