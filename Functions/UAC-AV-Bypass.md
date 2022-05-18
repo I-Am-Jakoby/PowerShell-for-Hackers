@@ -22,8 +22,8 @@ A UAC AV bypass
 
 ### [FUNCTION-NAME] 
 
-To avoid the Anti-Virus blocking this I had to heavily obfuscate and encode this command (test in a sand box environment need be)
-This command will open a powershell console with admin privledges and create a directory called "safe" in the Document folder 
+This command will open a powershell console with admin privledges and run the Base64 script in the $Payload variable 
+The Base64 script will make a directory called "safe" in your Documents folder
 This directory that is created will be added to the Microsoft Defender Exclusions list which makes it ignored by AntiVirus scans 
 Any files downloaded or ran from here will be ignored by the anti virus
 
