@@ -44,8 +44,8 @@
   Provide the name of the file   
   
 .EXAMPLE
-  B64 -source "C:\Users\USER\Desktop\script.ps1" -output "C:\Users\micha\Desktop" -File example
-  B64 -so "C:\Users\USER\Desktop\script.ps1" -out "C:\Users\micha\Desktop" -File example
+  B64 -source "C:\Users\USER\Desktop\script.ps1" -output "C:\Users\User\Desktop" -File example
+  B64 -so "C:\Users\USER\Desktop\script.ps1" -out "C:\Users\User\Desktop" -File example
   B64 -so "C:\Users\USER\Desktop\script.ps1" -File example
   "C:\Users\USER\Desktop\script.ps1" | B64 -File example
   
