@@ -78,7 +78,6 @@ Listed below are payloads that have used one of these functions:
     <img src="https://img.shields.io/badge/YouTube-I_am_Jakoby-red">
   </a>
 
-  [Project Link](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 </p>
 
 
@@ -91,5 +90,8 @@ Listed below are payloads that have used one of these functions:
 * [Hak5](https://hak5.org/)
 * [UberGuidoZ](https://github.com/UberGuidoZ)
 
+***
+
+[HOME-PAGE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
