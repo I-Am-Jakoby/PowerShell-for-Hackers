@@ -91,7 +91,7 @@ please feel free to reference this collection of functions we have gathered here
 <!-- CONTACT -->
 ## Contact
 
-<div><h2>I am Jakoby</h2></div>
+I am Jakoby
   <p><br/>
   
   <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
