@@ -47,7 +47,7 @@ Listed below are payloads that have used one of these functions:
 <!-- CONTACT -->
 ## Contact
 
-<div><h2>I am Jakoby</h2></div>
+I am Jakoby
   <p><br/>
 
   <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
