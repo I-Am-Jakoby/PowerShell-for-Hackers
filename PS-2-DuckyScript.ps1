@@ -136,17 +136,17 @@ function PS-2-Ducky {
 
 	echo "" >> $FilePath
 	echo "GUI r" >> $FilePath
-	echo "DELAY 250" >> $FilePath
+	echo "DELAY $Delay" >> $FilePath
 	echo "powershell" >> $FilePath
-	echo "DELAY 250" >> $FilePath
+	echo "DELAY $Delay" >> $FilePath
 	echo "ENTER" >> $FilePath
-	echo "DELAY 250" >> $FilePath
+	echo "DELAY $Delay" >> $FilePath
 	echo $pre >> $FilePath
-	echo "DELAY 250" >> $FilePath
+	echo "DELAY $Delay" >> $FilePath
 
 	echo $string$converted >> $FilePath
 
-	echo "DELAY 250" >> $FilePath
+	echo "DELAY $Delay" >> $FilePath
 	echo "ENTER" >> $FilePath
 }
 
