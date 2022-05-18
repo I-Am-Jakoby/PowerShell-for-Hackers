@@ -119,6 +119,7 @@ I am Jakoby
 ## Acknowledgments
 
 * [Hak5](https://hak5.org/)
+* [Darren](https://github.com/hak5darren)
 * [UberGuidoZ](https://github.com/UberGuidoZ)
 
 
