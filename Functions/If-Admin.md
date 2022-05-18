@@ -75,7 +75,6 @@ No current Examples to show. Please feel free to submit your own payload of you 
     <img src="https://img.shields.io/badge/YouTube-I_am_Jakoby-red">
   </a>
 
-  [Project Link](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 </p>
 
 
@@ -88,5 +87,8 @@ No current Examples to show. Please feel free to submit your own payload of you 
 * [Hak5](https://hak5.org/)
 * [UberGuidoZ](https://github.com/UberGuidoZ)
 
+***
+
+[HOME-PAGE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
