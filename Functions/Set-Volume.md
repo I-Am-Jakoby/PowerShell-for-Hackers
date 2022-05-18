@@ -32,6 +32,7 @@ Set-Volume off
 function Set-Volume {
 Param(
     [Parameter(Position=0)]
+    [ValidateSet('max','off')]
     [string[]]
     $vol
 )
