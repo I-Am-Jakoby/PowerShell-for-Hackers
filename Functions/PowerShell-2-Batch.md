@@ -87,7 +87,6 @@ No payloads have made use of this function yet, please feel free to contact me t
     <img src="https://img.shields.io/badge/YouTube-I_am_Jakoby-red">
   </a>
 
-  [Project Link](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 </p>
 
 
@@ -100,5 +99,8 @@ No payloads have made use of this function yet, please feel free to contact me t
 * [Hak5](https://hak5.org/)
 * [UberGuidoZ](https://github.com/UberGuidoZ)
 
+***
+
+[HOME-PAGE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
