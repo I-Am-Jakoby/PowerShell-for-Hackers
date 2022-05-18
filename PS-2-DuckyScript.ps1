@@ -81,6 +81,10 @@ function PS-2-Ducky {
 	[string]$File, 
 
 	[Parameter (Mandatory = $False)]
+	[Alias("de")]
+	[string]$Delay, 
+
+	[Parameter (Mandatory = $False)]
 	[Alias("t")]
 	[string]$Title, 
 
@@ -97,6 +101,8 @@ function PS-2-Ducky {
 	if (!$File) { $File = "converted.txt" }
 
 	if (!$Path) { $Path = [Environment]::GetFolderPath("Desktop") }
+
+	if (!$Delay) { $Delay = 250 }
 	
 	$FilePath = ($Path+"\"+$File+".txt")
 
