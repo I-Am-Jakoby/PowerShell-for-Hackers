@@ -44,6 +44,10 @@
 .PARAMETER File
   (Mandatory = $False)
   Provide the name of the file   
+  
+.PARAMETER Delay
+  (Mandatory = $False)
+  Provide a custom delay between commands  
 
 .PARAMETER Title
   (Mandatory = $False)
