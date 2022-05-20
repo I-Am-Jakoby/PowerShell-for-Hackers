@@ -43,6 +43,9 @@ please feel free to reference this collection of functions we have gathered here
 [Set-Volume](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Set-Volume.md)
 (Used to set the volume of the targets PC.)
 
+[PlaySound](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PlaySound.md)
+(Used to play a sound file from the console window.)
+
 [Minimize-Apps](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Minimize-Apps.md)
 (Used to minimize all the apps on your targets screen.)
 
