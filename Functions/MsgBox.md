@@ -20,7 +20,7 @@ This function will make a generic pop up message box
 
 ## The Function
 
-### [FUNCTION-NAME] 
+### [MsgBox] 
 
 The title, button, and image parameters are optional.
 
