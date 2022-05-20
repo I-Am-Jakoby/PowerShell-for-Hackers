@@ -16,7 +16,7 @@
 
 ## Description
 
-Play a sound file 
+Play a sound file from the console window
 
 ## The Function
 
