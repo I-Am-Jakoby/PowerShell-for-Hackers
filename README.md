@@ -55,6 +55,9 @@ please feel free to reference this collection of functions we have gathered here
 [Hide-Msg](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Hide-Msg.md)
 (Use steganography to hide a secret message in an image.)
 
+[MsgBox](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/MsgBox.md)
+(Use this function to make a generic pop up message box.)
+
 [Speak](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Speak.md)
 (Used to turn text to speech and talk through your targets speakers.)
 
