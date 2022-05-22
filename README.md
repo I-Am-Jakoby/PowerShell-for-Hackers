@@ -76,7 +76,7 @@ please feel free to reference this collection of functions we have gathered here
 [PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)
 (This function is used to convert PowerShell scripts to a .BAT file.)
 
-[Base64](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/B64.md)
+[B64](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/B64.md)
 (This function is used to either encode/decode scripts in Base64.)
 
 [Abuse-CapsLock](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Abuse-CapsLock.md)
