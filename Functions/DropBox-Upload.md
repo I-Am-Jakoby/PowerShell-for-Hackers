@@ -47,6 +47,7 @@ function DropBox-Upload {
 param (
 	
 [Parameter (Mandatory = $True, ValueFromPipeline = $True)]
+[Alias("f")]
 [string]$FileName
 ) 
 $DropBoxAccessToken = "YOUR-DROPBOX-ACCESS-TOKEN-HERE"   # Replace with your DropBox Access Token
