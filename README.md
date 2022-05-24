@@ -1,5 +1,8 @@
 ![Logo](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/logo-170-px.png?raw=true)
 
+![GitHub Stars](https://img.shields.io/github/stars/I-Am-Jakoby/PowerShell-for-Hackers?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/I-Am-Jakoby/PowerShell-for-Hackers?style=social)
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
