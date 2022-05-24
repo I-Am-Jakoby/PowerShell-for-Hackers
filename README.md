@@ -37,7 +37,7 @@ please feel free to reference this collection of functions we have gathered here
 * 📝 There will be a description of the payloads intended purpose 
 * ♻️ The functions themselves will be provided in easy copy and paste format 
 * 🔠 Examples of payloads that have used these functions will also be available  
-* 📽️ A video tutorial for each function is on its way 
+* 📽️ A video tutorial for each function is on its way ‼️
 
 ## The Functions 🧬
 
