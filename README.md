@@ -34,9 +34,10 @@ This is a collection of powershell functions that should be added to your arsena
 If you are looking to write your own payloads 
 please feel free to reference this collection of functions we have gathered here
 
-* There will be a description of the payloads intended purpose 
-* The functions themselves will be provided in easy copy and paste format 
-* Examples of payloads that have used these functions will also be available  
+* 📝 There will be a description of the payloads intended purpose 
+* ♻️ The functions themselves will be provided in easy copy and paste format 
+* 🔠 Examples of payloads that have used these functions will also be available  
+* 📽️ A video tutorial for each function is on its way 
 
 ## The Functions 🧬
 
