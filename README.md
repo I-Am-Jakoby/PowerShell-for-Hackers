@@ -14,7 +14,7 @@
   </ol>
 </details>
 
-# PowerShell Functions For Hackers
+# PowerShell Functions For Hackers 🤓💻
 
 A place where hackers come together to share their knowledge.
 
@@ -28,7 +28,7 @@ File must be saved as a .md file and then submit a pull request for review.
 
 ![alt text](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Assets/Ducky-Ex.jpg)
 
-## Description
+## Description 👨‍🏫
 
 This is a collection of powershell functions that should be added to your arsenal. 
 If you are looking to write your own payloads 
@@ -38,9 +38,7 @@ please feel free to reference this collection of functions we have gathered here
 * The functions themselves will be provided in easy copy and paste format 
 * Examples of payloads that have used these functions will also be available  
 
-## The Functions
-
-## 🧬 PowerShell for PayLoads
+## The Functions 🧬
 
 | Functions                                         | Description                                                                                                                                                         |
 | :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -94,7 +92,7 @@ I am Jakoby
 </p>
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments ❗
 
 * [Hak5](https://hak5.org/)
 * [Darren](https://github.com/hak5darren)
