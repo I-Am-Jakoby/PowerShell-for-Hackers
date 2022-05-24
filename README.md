@@ -1,9 +1,6 @@
 ![Logo](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/logo-170-px.png?raw=true)
 
-[![Contributors][contributors-shield]][https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/graphs/contributors]
-[![Forks][forks-shield]][https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/network/members]
-[![Stargazers][stars-shield]][https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/stargazers]
-[![Issues][issues-shield]][https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/issues]
+https://img.shields.io/github/stars/I-Am-Jakoby/PowerShell-for-Hackers?style=flat-square
 
 <!-- TABLE OF CONTENTS -->
 <details>
