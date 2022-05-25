@@ -83,9 +83,9 @@ Foreach($WLANProfileName in $WLANProfileNames){
     $WLANProfileObject | Add-Member -Type NoteProperty -Name "ProfileName" -Value $WLANProfileName
     $WLANProfileObject | Add-Member -Type NoteProperty -Name "ProfilePassword" -Value $WLANProfilePassword
     $WLANProfileObjects += $WLANProfileObject
-    Remove-Variable WLANProfileObject
-    return $WLANProfileObjects
+    Remove-Variable WLANProfileObject    
 }
+return $WLANProfileObjects
 }
 
 $Networks = Get-Networks
