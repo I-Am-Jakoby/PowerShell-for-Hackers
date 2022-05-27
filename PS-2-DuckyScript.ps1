@@ -61,9 +61,9 @@
   Provide a brief description 
   
 .EXAMPLE
-  B64 -source "C:\Users\USER\Desktop\script.ps1" -Path "C:\Users\User\Desktop" -File example -Title Super-Payload -Author Jakoby -Description "Does cool stuff"
-  B64 -s "C:\Users\USER\Desktop\script.ps1" -p "C:\Users\User\Desktop" -f example -t Super-Payload -a Jakoby -d "Does cool stuff"
-  "C:\Users\USER\Desktop\script.ps1" | B64 -f example -p "C:\Users\User\Desktop" -f example -t Super-Payload -a Jakoby -d "Does cool stuff"
+  PS-2-Ducky -source "C:\Users\USER\Desktop\script.ps1" -Path "C:\Users\User\Desktop" -File example -Title Super-Payload -Author Jakoby -Description "Does cool stuff"
+  PS-2-Ducky -s "C:\Users\USER\Desktop\script.ps1" -p "C:\Users\User\Desktop" -f example -t Super-Payload -a Jakoby -d "Does cool stuff"
+  "C:\Users\USER\Desktop\script.ps1" | PS-2-Ducky -f example -p "C:\Users\User\Desktop" -f example -t Super-Payload -a Jakoby -d "Does cool stuff"
   
 #>
 
@@ -101,7 +101,7 @@ function PS-2-Ducky {
 
 	)	
 
-	if (!$File) { $File = "converted.txt" }
+	if (!$File) { $File = "converted" }
 
 	if (!$Path) { $Path = [Environment]::GetFolderPath("Desktop") }
 
