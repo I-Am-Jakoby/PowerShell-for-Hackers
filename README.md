@@ -22,7 +22,7 @@ File must be saved as a .md file and then submit a pull request for review.
 
 ***
 
-[PowerShell to DuckyScript Converter](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/PS-2-DuckyScript.ps1)<--- Use to format your PS scripts into ready to use DuckyScript Payload
+[PowerShell to DuckyScript Converter](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Assets/Scripts/P-2-Ducky.ps1)<--- Use to format your PS scripts into ready to use DuckyScript Payload
 
 ![alt text](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Assets/Ducky-Ex.jpg)
 
