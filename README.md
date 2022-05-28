@@ -16,7 +16,7 @@
 
 A place where hackers come together to share their knowledge.
 
-To submit your own function use this [TEMPLATE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/template.md) 
+To submit your own function use this [TEMPLATE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Assets/template.md) 
 
 File must be saved as a .md file and then submit a pull request for review.
 
