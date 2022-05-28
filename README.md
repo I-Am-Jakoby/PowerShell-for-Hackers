@@ -91,7 +91,7 @@ I am Jakoby
 </p>
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments ❗
+## Acknowledgments 
 
 * [Hak5](https://hak5.org/)
 * [Darren](https://github.com/hak5darren)
