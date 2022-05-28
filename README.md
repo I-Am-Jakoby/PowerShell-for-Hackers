@@ -1,7 +1,5 @@
 ![Logo](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/logo-170-px.png?raw=true)
 
-![GitHub Stars](https://img.shields.io/github/stars/I-Am-Jakoby/PowerShell-for-Hackers?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/I-Am-Jakoby/PowerShell-for-Hackers?style=social)
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -39,7 +37,8 @@ please feel free to reference this collection of functions we have gathered here
 * 🔠 Examples of payloads that have used these functions will also be available  
 * 📽️ A video tutorial for each function is on its way ‼️
 
-## The Functions 🧬
+## The Functions 
+🧬
 
 | Functions                                         | Description                                                                                                                                                         |
 | :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
