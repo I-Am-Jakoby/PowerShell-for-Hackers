@@ -28,7 +28,7 @@ File must be saved as a .md file and then submit a pull request for review.
 
 ![alt text](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Assets/Ducky-Ex.jpg)
 
-## Description 👨‍🏫
+## Description 
 
 This is a collection of powershell functions that should be added to your arsenal. 
 If you are looking to write your own payloads 
