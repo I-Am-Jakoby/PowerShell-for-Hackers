@@ -48,12 +48,11 @@ param (
 	
 [Parameter (Mandatory = $True, ValueFromPipeline = $True)]
 [Alias("f")]
-[string]$outputPath
+[string]$SourceFilePath
 ) 
 $DropBoxAccessToken = "YOUR-DROPBOX-ACCESS-TOKEN-HERE"   # Replace with your DropBox Access Token
-$outputFile = Split-Path $outputPath -leaf
+$outputFile = Split-Path $SourceFilePath -leaf
 $TargetFilePath="/$outputFile"
-$SourceFilePath=$outputPath
 $arg = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
 $authorization = "Bearer " + $DropBoxAccessToken
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
