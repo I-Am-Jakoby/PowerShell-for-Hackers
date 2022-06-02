@@ -65,13 +65,17 @@ This is helpful if you are trying to determine if the target is away to run a sc
 
 ```
 function Target-Leaves {
+[CmdletBinding()]
+param (	
+[Parameter (Position=0, Mandatory = $True)]
+[Int]$Seconds
+) 
 Add-Type -AssemblyName System.Windows.Forms
 $o=New-Object -ComObject WScript.Shell
 
     while (1) {
-        $pauseTime = 5
 	  $originalPOS = [System.Windows.Forms.Cursor]::Position.X
-	  Start-Sleep -Seconds $pauseTime
+	  Start-Sleep -Seconds $Seconds
         if ([Windows.Forms.Cursor]::Position.X -eq $originalPOS){
             break
         }
