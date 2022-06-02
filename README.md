@@ -101,3 +101,12 @@ I am Jakoby
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contributors
+
+<a href="https://github.com/UberGuidoZ">
+  <img src="https://avatars.githubusercontent.com/u/57457139?s=64&v=4">
+</a>
+<a href="https://github.com/johnverbiest">
+  <img src="https://avatars.githubusercontent.com/u/22546421?s=64&v=4">
+</a>
