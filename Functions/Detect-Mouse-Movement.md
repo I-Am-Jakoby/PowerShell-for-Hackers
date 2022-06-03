@@ -71,7 +71,6 @@ param (
 [Int]$Seconds
 ) 
 Add-Type -AssemblyName System.Windows.Forms
-$o=New-Object -ComObject WScript.Shell
 
     while (1) {
 	  $originalPOS = [System.Windows.Forms.Cursor]::Position.X
