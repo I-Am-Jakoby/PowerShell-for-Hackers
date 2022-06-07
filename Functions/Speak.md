@@ -25,11 +25,8 @@ Speaks through your targets speakers
 Using SAPI.SpVoice you will feed strings to the functions to have it speak through your targets speakers using the following syntax 
 
 ```
-speak -Sentence "you have been hacked"
+speak "you have been hacked"
 
-or
-
-"you have been hacked" | speak
 ```
 
 ```
@@ -37,14 +34,13 @@ function speak {
 
 [CmdletBinding()]
 param (	
-[Parameter (Mandatory = $True, ValueFromPipeline = $True)]
+[Parameter (Position=0,Mandatory = $True)]
 [string]$Sentence
 ) 
 
 $s=New-Object -ComObject SAPI.SpVoice
 $s.Rate = -2
 $s.Speak($Sentence)
-
 }
 ```
 
