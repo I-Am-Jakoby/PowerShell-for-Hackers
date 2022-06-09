@@ -24,24 +24,34 @@ This function can be used to either mute the sound of the target PC or raise it 
 
 In this function we will create an object to allow us to use the Send Keys method to either raise or lower the volume using the following syntax
 ```
-Set-Volume max
-Set-Volume off 
+Set-Volume 50
+
 ```
 
 ```
-function Set-Volume {
-Param(
-    [Parameter(Position=0)]
-    [ValidateSet('max','off')]
-    [string[]]
-    $vol
-)
-$volume = switch ( $vol )
+Function Set-Volume 
 {
-    "max"  { 175 }
-    "off" { 174 }
-}
-$k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] $volume)}
+    Param(
+        [Parameter(Mandatory=$true)]
+        [ValidateRange(0,100)]
+        [Int]
+        $volume
+    )
+
+    # Calculate number of key presses. 
+    $keyPresses = [Math]::Ceiling( $volume / 2 )
+    
+    # Create the Windows Shell object. 
+    $obj = New-Object -ComObject WScript.Shell
+    
+    # Set volume to zero. 
+    1..50 | ForEach-Object {  $obj.SendKeys( [char] 174 )  }
+    
+    # Set volume to specified level. 
+    for( $i = 0; $i -lt $keyPresses; $i++ )
+    {
+        $obj.SendKeys( [char] 175 )
+    }
 }
 ```
 
