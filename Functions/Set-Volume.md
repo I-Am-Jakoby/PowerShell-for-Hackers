@@ -25,7 +25,6 @@ This function can be used to either mute the sound of the target PC or raise it 
 In this function we will create an object to allow us to use the Send Keys method to either raise or lower the volume using the following syntax
 ```
 Set-Volume 50
-
 ```
 
 ```
