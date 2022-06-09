@@ -23,12 +23,13 @@ Play a sound file from the console window
 ### [PlaySound] 
 
 Pass the path of the sound file into this function to have it play using the following syntax:
+```
+PlaySound -File "C:\Users\User\AppData\Local\Temp\sound.wav"
 
-PlaySound -File "C:\Users\mUser\AppData\Local\Temp\sound.wav"
+PlaySound "C:\Users\User\AppData\Local\Temp\sound.wav"
 
-PlaySound "C:\Users\mUser\AppData\Local\Temp\sound.wav"
-
-"C:\Users\mUser\AppData\Local\Temp\sound.wav" | PlaySound
+"C:\Users\User\AppData\Local\Temp\sound.wav" | PlaySound
+```
 
 ```
 function PlaySound {
