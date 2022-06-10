@@ -26,10 +26,6 @@ In this function you will provide the path of your image and your secret message
 
 ```
 Hide-Msg -Path "C:\Users\user\Desktop\secret.jpg" -Message "this is your secret message"
-
-or
-
-"C:\Users\user\Desktop\secret.jpg" | Hide-Msg -Message "this is your secret message"
 ```
 
 ```
