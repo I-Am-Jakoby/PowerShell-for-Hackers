@@ -73,7 +73,7 @@ Use the following syntax:
 (blinks 3 times pausing for a second between each) 
 
 ```
-Caps-Indicator -pause 1 -num 3
+Caps-Indicator -pause 1 -blinks 3
 ```
 
 ```
@@ -85,16 +85,15 @@ param (
 [string]$pause,
 
 [Parameter (Mandatory = $True)]
-[int]$num
+[int]$blinks
 )
 
 Add-Type -AssemblyName System.Windows.Forms
 $o=New-Object -ComObject WScript.Shell
-for($i = 1; $i -le $num * 2; $i++) {
-    $o.SendKeys("{CAPSLOCK}");Start-Sleep -Seconds $pause
+for($i = 1; $i -le $blinks * 2; $i++) {
+    $o.SendKeys("{CAPSLOCK}");Start-Sleep -Milliseconds $pause
     }
 }
-
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
