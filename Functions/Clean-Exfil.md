@@ -46,7 +46,7 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue
 
 
 ## Examples 
-(Examples of script that have used your function) - delete this line
+
 Listed below are payloads that have used one of these functions:
 
 [ADV-Recon](https://github.com/I-Am-Jakoby/hak5-submissions/tree/main/OMG/Payloads/OMG-ADV-Recon)
