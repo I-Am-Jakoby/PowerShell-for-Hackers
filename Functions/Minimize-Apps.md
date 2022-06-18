@@ -14,6 +14,13 @@
 
 # Minimize Apps
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=WHEFrRq82pA&t">
+        <img src=https://i.ytimg.com/vi/WHEFrRq82pA/hqdefault.jpg width="300" alt="Python" />
+      </a>
+      <br>YouTube Tutorial	
+</p>
+
 ## Description
 
 A function to minimize all the apps on your targets screen
