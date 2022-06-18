@@ -12,11 +12,18 @@
   </ol>
 </details>
 
-# Volume Max/Off
+# Set Volume
+
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=6lScbYNLtJ4&t">
+        <img src=https://i.ytimg.com/vi/6lScbYNLtJ4/hqdefault.jpg width="300" alt="Python" />
+      </a>
+      <br>YouTube Tutorial	
+</p>
 
 ## Description
 
-This function can be used to either mute the sound of the target PC or raise it to max volume
+This function can be used to set the volume of your targets PC
 
 ## The Function
 
