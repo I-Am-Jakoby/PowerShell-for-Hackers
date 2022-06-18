@@ -14,6 +14,13 @@
 
 # PlaySound
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=Qm7KeuuNvMI&t">
+        <img src=https://i.ytimg.com/vi/Qm7KeuuNvMI/hqdefault.jpg width="300" alt="Python" />
+      </a>
+      <br>YouTube Tutorial	
+</p>
+
 ## Description
 
 Play a sound file from the console window
