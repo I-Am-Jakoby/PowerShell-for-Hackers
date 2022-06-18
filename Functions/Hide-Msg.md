@@ -14,6 +14,13 @@
 
 # Hide Message
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=sc7uBxuwwYg&t">
+        <img src=https://i.ytimg.com/vi/sc7uBxuwwYg/hqdefault.jpg width="300" alt="Python" />
+      </a>
+      <br>YouTube Tutorial	
+</p>
+
 ## Description
 
 This function can be used to hide a secret message in an image
