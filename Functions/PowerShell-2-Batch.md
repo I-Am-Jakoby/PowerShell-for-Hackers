@@ -26,15 +26,15 @@ Using this function will convert your powershell payload over to Base64 and then
 Make the conversion with this function using the following syntax: 
 
 ```
-PowerShell-2-Batch -Path "C:\Users\User\Desktop\example.ps1"
+P2B -Path "C:\Users\User\Desktop\example.ps1"
 
 or
 
-"C:\Users\User\Desktop\example.ps1" | PowerShell-2-Batch
+"C:\Users\User\Desktop\example.ps1" | P2B
 ```
 
 ```
-function PowerShell-2-Batch {
+function P2B {
     param
     (
         [Parameter(Mandatory,ValueFromPipeline,ValueFromPipelineByPropertyName)]
@@ -46,7 +46,7 @@ function PowerShell-2-Batch {
     {
         $encoded = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes((Get-Content -Path $Path -Raw -Encoding UTF8)))
         $newPath = [Io.Path]::ChangeExtension($Path, ".bat")
-        "@echo off`npowershell.exe -NoExit -encodedCommand $encoded" | Set-Content -Path $newPath -Encoding Ascii
+        "@echo off`npowershell -w h -NoP -NonI -Exec Bypass -enc $encoded" | Set-Content -Path $newPath -Encoding Ascii
     }
 }
 ```
