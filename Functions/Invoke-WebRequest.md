@@ -39,7 +39,7 @@ $Env:USERPROFILE\Desktop\
 Use this environment variable to save a file to your desktop
 
 ```
-iwr < Your url for the intended file>?dl=1 -O $env:TMP\image.jpg
+iwr < Your url for the intended file>?dl=1 -O $Env:USERPROFILE\Desktop\image.jpg
 ```
 
 ### [IWR-Fileless] 
