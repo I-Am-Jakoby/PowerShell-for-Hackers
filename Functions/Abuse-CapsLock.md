@@ -18,25 +18,7 @@
 
 These few functions will be different ways that you can take advantage of the CapsLock button 
 
-## The Function
-
-### [Caps-Off] 
-
-This function will make sure capslock is turned back off if one of your other scripts leaves it one
-
-```
-function Caps-Off {
-Add-Type -AssemblyName System.Windows.Forms
-$caps = [System.Windows.Forms.Control]::IsKeyLocked('CapsLock')
-
-#If true, toggle CapsLock key, to ensure that the script doesn't fail
-if ($caps -eq $true){
-
-$key = New-Object -ComObject WScript.Shell
-$key.SendKeys('{CapsLock}')
-}
-}
-```
+## The Functions
 
 ### [Stop-Sleep] 
 
@@ -93,6 +75,24 @@ $o=New-Object -ComObject WScript.Shell
 for($i = 1; $i -le $blinks * 2; $i++) {
     $o.SendKeys("{CAPSLOCK}");Start-Sleep -Milliseconds $pause
     }
+}
+```
+
+### [Caps-Off] 
+
+This function will make sure capslock is turned back off if one of your other scripts leaves it one
+
+```
+function Caps-Off {
+Add-Type -AssemblyName System.Windows.Forms
+$caps = [System.Windows.Forms.Control]::IsKeyLocked('CapsLock')
+
+#If true, toggle CapsLock key, to ensure that the script doesn't fail
+if ($caps -eq $true){
+
+$key = New-Object -ComObject WScript.Shell
+$key.SendKeys('{CapsLock}')
+}
 }
 ```
 
