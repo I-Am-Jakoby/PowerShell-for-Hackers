@@ -45,8 +45,7 @@ This function will run the current user against LocalGroupMember to return True 
 ```
 function If-Admin {
 	$user = "$env:COMPUTERNAME\$env:USERNAME"
-	$group = 'Administrators'
-	$isAdmin = (Get-LocalGroupMember $group).Name -contains $user
+	$isAdmin = (Get-LocalGroupMember 'Administrators').Name -contains $user
 if($isAdmin){
 	Write-host 'Is Admin' -BackgroundColor DarkRed -ForegroundColor White
 	}
@@ -54,6 +53,8 @@ if($isAdmin){
 	Write-host 'Not Admin' -BackgroundColor DarkBlue -ForegroundColor White
 	}
 }
+
+If-Admin
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
