@@ -54,13 +54,16 @@ param (
 [Parameter (Mandatory = $True)]
 [string]$SSID,
 
-[Parameter (Mandatory = $True)]
+[Parameter (Mandatory = $False)]
+[Alias("s")]
 [string]$Security,
 
 [Parameter (Mandatory = $False)]
 [string]$PW
 
 )
+
+if (!$Security) {$Security = "f"}
 
 # -------------------------------------------------------------------------------------------------
 
@@ -121,7 +124,6 @@ $sec
 $XMLFILE > ($profilefile)
 netsh wlan add profile filename="$($profilefile)"
 }
-
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
