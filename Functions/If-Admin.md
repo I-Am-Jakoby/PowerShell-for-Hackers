@@ -20,7 +20,7 @@ These functions are used to determine if you have Admin level privledges
 
 ## The Function
 
-### [IfAdmin-Window] 
+### [If-Admin-Window] 
 
 This function will let you know if you are currently in an Admin Privledge Level window
 
@@ -38,7 +38,7 @@ if($isAdmin){
 }
 ```
 
-### [IfAdmin] 
+### [If-Admin] 
 
 This function will run the current user against LocalGroupMember to return True or False if Profile has Admin Privledges
 
