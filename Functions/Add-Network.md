@@ -41,7 +41,7 @@ Add-NetWork -SSID wifi-name -security t -PW wifi-password
 
 For a network profile NOT using a Password use:
 
-Add-NetWork -SSID wifi-name -security f
+Add-NetWork -SSID wifi-name 
 
 ```
 
