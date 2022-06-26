@@ -53,8 +53,6 @@ if($isAdmin){
 	Write-host 'Not Admin' -BackgroundColor DarkBlue -ForegroundColor White
 	}
 }
-
-If-Admin
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
