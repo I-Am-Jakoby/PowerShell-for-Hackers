@@ -16,26 +16,43 @@
 
 ## Description
 
-This function will run another function or script block if your target is in the administrator group 
+These functions are used to determine if you have Admin level privledges
 
 ## The Function
 
-### [If-Admin] 
+### [IfAdmin-Window] 
 
-This function will run the current user against LocalGroupMember to return True or False
+This function will let you know if you are currently in an Admin Privledge Level window
 
-If True you can run another function or script block
+```
+function IfAdmin-Window {  
+	$user = [Security.Principal.WindowsIdentity]::GetCurrent();
+	$isAdmin = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)  
+	
+if($isAdmin){
+	Write-host 'Is Admin Window' -BackgroundColor DarkRed -ForegroundColor White
+	}
+	else{
+	Write-host 'Not Admin Window' -BackgroundColor DarkBlue -ForegroundColor White
+	}
+}
+```
+
+### [IfAdmin] 
+
+This function will run the current user against LocalGroupMember to return True or False if Profile has Admin Privledges
 
 ```
 function If-Admin {
-$user = "$env:COMPUTERNAME\$env:USERNAME"
-$group = 'Administrators'
-$isAdmin = (Get-LocalGroupMember $group).Name -contains $user
-
+	$user = "$env:COMPUTERNAME\$env:USERNAME"
+	$group = 'Administrators'
+	$isAdmin = (Get-LocalGroupMember $group).Name -contains $user
 if($isAdmin){
-# Execute your intended code here
-}
-
+	Write-host 'Is Admin' -BackgroundColor DarkRed -ForegroundColor White
+	}
+	else{
+	Write-host 'Not Admin' -BackgroundColor DarkBlue -ForegroundColor White
+	}
 }
 ```
 
