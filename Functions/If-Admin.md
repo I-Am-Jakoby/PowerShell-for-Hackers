@@ -14,6 +14,13 @@
 
 # If-Admin
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=vK5fYx5vlss">
+        <img src=https://i.ytimg.com/vi/vK5fYx5vlss/hqdefault.jpg width="300" alt="Python" />
+      </a>
+      <br>YouTube Tutorial	
+</p>
+
 ## Description
 
 These functions are used to determine if you have Admin level privledges
