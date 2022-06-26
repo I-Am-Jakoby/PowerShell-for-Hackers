@@ -25,7 +25,7 @@ These functions are used to determine if you have Admin level privledges
 This function will let you know if you are currently in an Admin Privledge Level window
 
 ```
-function IfAdmin-Window {  
+function If-Admin-Window {  
 	$user = [Security.Principal.WindowsIdentity]::GetCurrent();
 	$isAdmin = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)  
 	
