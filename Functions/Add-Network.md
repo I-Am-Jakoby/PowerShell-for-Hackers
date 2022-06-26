@@ -55,7 +55,7 @@ param (
 [string]$SSID,
 
 [Parameter (Mandatory = $True)]
-[string]$security,
+[string]$Security,
 
 [Parameter (Mandatory = $False)]
 [string]$PW
