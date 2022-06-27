@@ -22,11 +22,11 @@ This function will add a network profile to your targets PC
 
 ### [Add-NetWork] 
 
-This function will accept 3 parameters, 2 of which are mandatory 
+This function will accept 3 parameters, 1 is mandatory 
 
 You always have to provide the $SSID to give your network a name 
 
-The $Security parameter is also mandatory only takes the value of "t"(true) or "f"(false) 
+The $Security parameter is defined automatically when providing a password or not 
 
 This will tell the function whether or not you need a wifi password for your network 
 
