@@ -47,7 +47,7 @@ $loc = switch ( $location )
 	}
 }
 
-[Convert]::ToBase64String((Get-Content -Path $img -Encoding Byte)) >> "$loc\capture.txt"
+[Convert]::ToBase64String((Get-Content -Path $img -Encoding Byte)) >> "$loc\encImage.txt"
 }
 ```
 
@@ -81,7 +81,7 @@ $loc = switch ( $location )
 Add-Type -AssemblyName System.Drawing
 $Base64 = Get-Content -Raw -Path $file
 $Image = [Drawing.Bitmap]::FromStream([IO.MemoryStream][Convert]::FromBase64String($Base64))
-$Image.Save("$loc\RecImage.jpg")
+$Image.Save("$loc\decImage.jpg")
 }
 ```
 
