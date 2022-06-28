@@ -34,7 +34,9 @@ b64-img -file "C:\Users\user\Desktop\image.jpg" -location desk
 ### [img-b64] 
 
 This function will convert your image to base64 format 
+
 Use the image tag to provide the path of the image you are trying to convert
+
 Using the Location parameter will determine if the file containing the base64 code is saved to the desktop or temp folder
 
 ```
@@ -65,7 +67,9 @@ $loc = switch ( $location )
 ### [b64-img] 
 
 This function will convert your base64 encoded file back into an image 
+
 Use the file tag to provide the path of the file you are trying to convert
+
 Using the Location parameter will determine if the file containing the base64 code is saved to the desktop or temp folder
 
 ```
