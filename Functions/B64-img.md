@@ -5,6 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#Description">Description</a></li>
+    <li><a href="#SYNTAX">Syntax</a></li>	  
     <li><a href="#The-Functions">The Functions</a></li>
     <li><a href="#Examples">Examples</a></li>
     <li><a href="#Contact">Contact</a></li>
@@ -17,6 +18,16 @@
 ## Description
 
 These two functions can be used to convert an image to and from base64 format
+
+## [SYNTAX]
+
+### Encode an Image 
+
+img-b64 -img "C:\Users\user\Desktop\image.jpg" -location desk
+
+### Decode a File 
+
+b64-img -file "C:\Users\user\Desktop\image.jpg" -location desk
 
 ## The Functions
 
