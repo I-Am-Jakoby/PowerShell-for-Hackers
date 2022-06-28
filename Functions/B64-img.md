@@ -22,13 +22,13 @@ These two functions can be used to convert an image to and from base64 format
 ## [SYNTAX]
 
 ### Encode an Image 
-
+```
 img-b64 -img "C:\Users\user\Desktop\image.jpg" -location desk
-
+```
 ### Decode a File 
-
+```
 b64-img -file "C:\Users\user\Desktop\image.jpg" -location desk
-
+```
 ## The Functions
 
 ### [img-b64] 
