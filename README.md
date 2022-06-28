@@ -1,5 +1,6 @@
-![Logo](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/logo-170-px.png?raw=true)
+<div align="center"><h3>Currently ranked #1 for most contributed payloads</h3></div>
 
+![hak 5](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/hak5-sub.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -14,7 +15,8 @@
 
 # PowerShell Functions For Hackers 🤓💻
 
-A place where hackers come together to share their knowledge.
+I am currently the #1 ranked payload contributor to Hak5. I decided to make this repository to share all of the functions I have come up with to develop my payloads.
+With the goal of building this repository with other like minded hackers. 
 
 To submit your own function use this [TEMPLATE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Assets/template.md) 
 
