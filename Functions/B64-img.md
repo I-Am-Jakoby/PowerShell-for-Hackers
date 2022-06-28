@@ -39,6 +39,8 @@ Use the image tag to provide the path of the image you are trying to convert
 
 Using the Location parameter will determine if the file containing the base64 code is saved to the desktop or temp folder
 
+If no location is designated it will save it to the desktop by default
+
 ```
 function img-b64 {
 [CmdletBinding()]
@@ -71,6 +73,8 @@ This function will convert your base64 encoded file back into an image
 Use the file tag to provide the path of the file you are trying to convert
 
 Using the Location parameter will determine if the file containing the base64 code is saved to the desktop or temp folder
+
+If no location is designated it will save it to the desktop by default
 
 ```
 function b64-img {
