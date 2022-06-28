@@ -14,6 +14,13 @@
 
 # Add-NetWork
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=e2Msu2CnFkM">
+        <img src=https://i.ytimg.com/vi/e2Msu2CnFkM/hqdefault.jpg width="300" alt="C#" />
+      </a>
+      <br>YouTube Tutorial
+</p>
+
 ## Description
 
 This function will add a network profile to your targets PC  
