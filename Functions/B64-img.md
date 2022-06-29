@@ -49,6 +49,7 @@ param (
 [string]$img,
 
 [Parameter (Mandatory = $False)]
+[ValidateSet('desk', 'temp')]
 [string]$location
 )
 
@@ -84,6 +85,7 @@ param (
 [string]$file,
 
 [Parameter (Mandatory = $False)]
+[ValidateSet('desk', 'temp')]
 [string]$location
 )
 
