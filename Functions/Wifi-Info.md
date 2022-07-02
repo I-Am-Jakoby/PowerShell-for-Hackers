@@ -12,7 +12,7 @@
   </ol>
 </details>
 
-# Wifi-Info
+# Wifi-Pass
 
 ## Description
 
