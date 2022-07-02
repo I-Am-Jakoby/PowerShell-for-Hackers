@@ -44,7 +44,6 @@ param (
 [int]$blinks
 )
 
-Add-Type -AssemblyName System.Windows.Forms
 $o=New-Object -ComObject WScript.Shell
 for($i = 1; $i -le $blinks * 2; $i++) {
     $o.SendKeys("{CAPSLOCK}");Start-Sleep -Milliseconds $pause
