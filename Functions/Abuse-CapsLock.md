@@ -20,32 +20,6 @@ These few functions will be different ways that you can take advantage of the Ca
 
 ## The Functions
 
-### [Stop-Sleep] 
-
-This function will ensure your targets screen will not go to sleep
-The caplock light will serve as an indicator that the script is still running 
-This script uses the previous Caps-Off script to make sure the capslock is turned back off 
-You will need to include both functions for this one to work
-
-```
-function Stop-Sleep {
-Add-Type -AssemblyName System.Windows.Forms
-$originalPOS = [System.Windows.Forms.Cursor]::Position.X
-$o=New-Object -ComObject WScript.Shell
-
-    while (1) {
-        $pauseTime = 3
-        if ([Windows.Forms.Cursor]::Position.X -ne $originalPOS){
-            Caps-Off
-            break
-        }
-        else {
-            $o.SendKeys("{CAPSLOCK}");Start-Sleep -Seconds $pauseTime
-        }
-    }
-}
-```
-
 ### [Caps-Indicator] 
 
 This function is meant to serve as an indicator for stages of your scripts 
@@ -55,7 +29,7 @@ Use the following syntax:
 (blinks 3 times pausing for a second between each) 
 
 ```
-Caps-Indicator -pause 1 -blinks 3
+Caps-Indicator -pause 250 -blinks 3
 ```
 
 ```
