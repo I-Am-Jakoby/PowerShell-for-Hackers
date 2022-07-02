@@ -24,7 +24,7 @@ This function will get the geo-location of your target
 
 Using the Geo-Watcher function you will get the location of your Target saved to the variable $GL
 
-Longitude and Latitude will be saved individually to the the following variables $Lon and $Lat
+Longitude and Latitude will be saved individually to the the following variables $Lat and $Lon
 
 ```
 function Get-GeoLocation{
@@ -40,8 +40,13 @@ function Get-GeoLocation{
 	if ($GeoWatcher.Permission -eq 'Denied'){
 		Write-Error 'Access Denied for Location Information'
 	} else {
-		$GeoWatcher.Position.Location | Select Latitude,Longitude #Select the relevent results.
-		
+		$GL = $GeoWatcher.Position.Location | Select Latitude,Longitude #Select the relevent results.
+		$GL = $GL -split " "
+		$Lat = $GL[0].Substring(11) -replace ".$"
+		$Lon = $GL[1].Substring(10) -replace ".$" 
+		return $Lat, $Lon
+
+
 	}
 	}
     # Write Error is just for troubleshooting
@@ -51,24 +56,10 @@ function Get-GeoLocation{
     } 
 
 }
-```
-$GL will return something that looks like the following: 
 
-```
-Latitude  Longitude
---------  ---------
-43.998350 -75.953510
+$Lat, $Lon = Get-GeoLocation
 ```
 
-```
-$GL = Get-GeoLocation
-
-$GL = $GL -split " "
-
-$Lat = $GL[0].Substring(11) -replace ".$"
-
-$Lon = $GL[1].Substring(10) -replace ".$"
-```
 
 Going a step further we can use [Start-Process] to open a tab in the browser with a map of their current location
 
