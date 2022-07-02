@@ -15,6 +15,13 @@
 
 # Base64 Image Converter
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=x6H96fxyQ-Y">
+        <img src=https://i.ytimg.com/vi/x6H96fxyQ-Y/hqdefault.jpg width="300" alt="Golang" />
+      </a>
+      <br>YouTube Tutorial
+</p>
+
 ## Description
 
 These two functions can be used to convert an image to and from base64 format
