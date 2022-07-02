@@ -24,7 +24,7 @@ This function will get the geo-location of your target
 
 Using the Geo-Watcher function you will get the location of your Target saved to the variable $GL
 
-Longitude and Latitude will be saved individually to the the following variables $Lat and $Lon
+Latitude and Longitude will be saved individually to the the following variables $Lat and $Lon
 
 ```
 function Get-GeoLocation{
