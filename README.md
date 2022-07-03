@@ -65,7 +65,10 @@ please feel free to reference this collection of functions we have gathered here
 | [Wifi-Pass](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Wifi-Info.md)   | Use these functions to enumerate your targets wifi and get their wifi passwords.
 | [Get-GeoLocation](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Get-GeoLocation.md)   | Use this function to get the Geo-Location of your target.
 
-
+## Bonus Function
+| Function                                         | Description  
+| :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [UAC-Bypass](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/UAC-Bypass.md)     | Used to run any command with Admin level privledges completely bypassing the UAC
 
 <!-- CONTACT -->
 ## Contact
