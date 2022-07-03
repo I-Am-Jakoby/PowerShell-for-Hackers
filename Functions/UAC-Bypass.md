@@ -24,7 +24,9 @@ obfuscate it. So with that being said you really should not run code if you do n
 ### [UAC-Bypass] 
 
 This function has 2 parts. 
+
 You have the ```$code``` variable you can store any base64 encoded script into. 
+
 You can use my [Text to Base64](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/B64.md) function to encode your own scripts.
 
 ```
