@@ -34,7 +34,7 @@ $code = "TgBlAHcALQBJAHQAZQBtACAAQwA6AFwASQB0AC0AVwBvAHIAawBlAGQALgB0AHgAdAA="
 ```
 Next you have a highly obfuscated block of code that will run any Base64 encoded script stored in the ```$code``` variable with Admin rights. 
 
-Using the code above as an example running both of these in a Powershell console will create a file called ```It-Worked.txt``` in your 
+Using the code above as an example running both of these in a standard non Admin Powershell console will create a file called ```It-Worked.txt``` in your 
 
 C: directory just to show you it works.
 
