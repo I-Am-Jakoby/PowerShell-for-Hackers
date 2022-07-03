@@ -100,11 +100,6 @@ param (
 </table>
 </div>
 
-<p align="center">
-        <img src="https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg" alt="Github Stats" />
-</p>
-
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -119,3 +114,4 @@ param (
 [HOME-PAGE](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
