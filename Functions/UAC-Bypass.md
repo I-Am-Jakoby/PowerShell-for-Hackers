@@ -13,6 +13,13 @@
 
 # UAC Bypass
 
+<p align="center">
+      <a href="https://www.youtube.com/watch?v=nBNmupIBI54">
+        <img src=https://i.ytimg.com/vi/nBNmupIBI54/hqdefault.jpg width="300" alt="C#" />
+      </a>
+      <br>YouTube Tutorial
+</p>
+
 ## Description
 
 This is a bonus function I am including with this repository. It will allow you to run any base64 encoded script from a standard Powershell console regardless
