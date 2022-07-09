@@ -23,8 +23,6 @@ iwr https://raw.githubusercontent.com/I-Am-Jakoby/PowerShell-for-Hackers/main/As
 $updateText = [IO.File]::ReadAllText($updateFile)
 [IO.File]::WriteAllText($updateFile, $updateText.TrimEnd())
 Copy-Item -Path $updateFile -Destination $myFile
-Break 
-[void]$Form.ShowDialog();exit
 
 }
 elseif ($Update -eq "No"){[void]$Form.ShowDialog();exit}
