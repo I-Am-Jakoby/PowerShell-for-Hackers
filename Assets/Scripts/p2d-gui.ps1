@@ -222,6 +222,7 @@ $updateText = [IO.File]::ReadAllText($updateFile)
 [IO.File]::WriteAllText($updateFile, $updateText.TrimEnd())
 Copy-Item -Path $updateFile -Destination $myFile
 Remove-Item $updateFile
+$UpdForm.Close()
 })
 #-------------------------------------------------------------------------------------------------------
 #	no button click event
