@@ -23,6 +23,8 @@ iwr https://raw.githubusercontent.com/I-Am-Jakoby/PowerShell-for-Hackers/main/As
 $updateText = [IO.File]::ReadAllText($updateFile)
 [IO.File]::WriteAllText($updateFile, $updateText.TrimEnd())
 Copy-Item -Path $updateFile -Destination $myFile
+Break 
+[void]$Form.ShowDialog();exit
 
 }
 elseif ($Update -eq "No"){[void]$Form.ShowDialog();exit}
@@ -172,7 +174,6 @@ $DescriptionBox.Location 	        = New-Object System.Drawing.Point(15,625)
 $DescriptionBox.Size 		        = New-Object System.Drawing.Size(300,60) 
 $DescriptionBox.Multiline 	        = $true 
 $DescriptionBox.AcceptsReturn         = $true 
-$DescriptionBox.Text 		        = $myFile
 
 $Keyboards                    	  = New-Object system.Windows.Forms.CheckBox
 $Keyboards.text             	  	  = "Non EN Keyboards - Windows Only"
