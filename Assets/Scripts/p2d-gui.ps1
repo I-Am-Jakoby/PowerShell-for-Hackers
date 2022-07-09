@@ -1,4 +1,4 @@
-$myVer = .5
+$myVer = 1.0
 
 $myFile = ($MyInvocation.MyCommand.Path)
 
