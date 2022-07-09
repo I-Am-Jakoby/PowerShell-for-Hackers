@@ -2,7 +2,7 @@ $a = Get-Content -Path ($MyInvocation.MyCommand.Path)
 
 $b = (Invoke-webrequest -URI "https://raw.githubusercontent.com/I-Am-Jakoby/PowerShell-for-Hackers/main/Assets/Scripts/ut.ps1").Content
 
-$update = $a -eq $b
+$update = ($a -eq $b)
 
 echo $update
 
