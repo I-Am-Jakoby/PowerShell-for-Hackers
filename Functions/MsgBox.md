@@ -85,7 +85,7 @@ if (!$image) {$image = "None"}
 [//]: # (Examples of scripts that have used your function) 
 Listed below are payloads that have used one of these functions:
 
-None currently. Please feel free to submit a pull request and edit this llne linking one of your payloads that have used this function.
+None currently. Please feel free to submit a pull request and edit this line linking one of your payloads that have used this function.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
