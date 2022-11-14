@@ -56,7 +56,7 @@ please feel free to reference this collection of functions we have gathered here
 | [If-Admin](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/If-Admin.md)   | This function is to test if your target is an Admin, If $True run a secondary function.
 | [Invoke-WebRequest](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Invoke-WebRequest.md)   | This function is used to either download or upload files or data.
 | [DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)   | This function is used to upload "aquired" files to DropBox. 
-| [Discord-Exfil](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Discord-Exfil.md)   | This function is used to upload "aquired" files to Discord. 
+| [Discord-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Discord-Exfil.md)   | This function is used to upload "aquired" files to Discord. 
 | [PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)   | This function is used to convert PowerShell scripts to a .BAT file.
 | [B64-text](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/B64.md)   | These functions are used to either encode/decode scripts in Base64. 
 | [B64-img](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/B64-img.md)   | These functions are used to either encode/decode images in Base64. 
