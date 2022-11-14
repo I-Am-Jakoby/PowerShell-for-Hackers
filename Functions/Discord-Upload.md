@@ -16,7 +16,7 @@
 
 <p align="center">
       <a href="https://www.youtube.com/watch?v=VPU7dFzpQrM">
-        <img src=https://i.ytimg.com/vi/VPU7dFzpQrM/hqdefault.jpg width="300" alt="C#" />
+        <img src=https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/raw/main/Assets/images/thumbnail.png width="300" alt="C#" />
       </a>
       <br>YouTube Tutorial
 </p>
