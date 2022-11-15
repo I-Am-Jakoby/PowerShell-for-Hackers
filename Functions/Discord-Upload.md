@@ -64,11 +64,11 @@ if (-not ([string]::IsNullOrEmpty($file))){curl.exe -F "file1=@$file" $hookurl}
 ----------------------------------------------------------------------------------------------------------------------------------
 ### [Syntax]
 ```
-UploadFile-Discord -file "file.txt" -text "this is a text file"
+Upload-Discord -file "file.txt" -text "this is a text file"
 
 or
 
-UploadFile-Discord -file "image.jpg" -text "this is an iamge"
+Upload-Discord -file "image.jpg" -text "this is an iamge"
 ```
 
 
