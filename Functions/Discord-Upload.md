@@ -15,7 +15,7 @@
 # Discord-Upload
 
 <p align="center">
-      <a href="https://www.youtube.com/watch?v=VPU7dFzpQrM">
+      <a href="https://youtu.be/Zs-1j42ySNU">
         <img src=https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/raw/main/Assets/images/thumbnail.png width="300" alt="C#" />
       </a>
       <br>YouTube Tutorial
