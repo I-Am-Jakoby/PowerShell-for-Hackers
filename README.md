@@ -55,7 +55,8 @@ please feel free to reference this collection of functions we have gathered here
 | [Clean-Exfil](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Clean-Exfil.md) | This function is to erase any trace of you after wreaking havok on your target.                                                                                                         |
 | [If-Admin](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/If-Admin.md)   | This function is to test if your target is an Admin, If $True run a secondary function.
 | [Invoke-WebRequest](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Invoke-WebRequest.md)   | This function is used to either download or upload files or data.
-| [DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)   | This function is used to upload "aquired" files to DropBox. 
+| [NS-Lookup](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/ns-lookup.md)   | This function is used to download and execute payloads from DNS TXT Records
+| [DropBox-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/DropBox-Upload.md)   |  This function is used to upload "aquired" files to Dropbox.
 | [Discord-Upload](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Discord-Upload.md)   | This function is used to upload "aquired" files to Discord. 
 | [PowerShell-2-Batch](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/PowerShell-2-Batch.md)   | This function is used to convert PowerShell scripts to a .BAT file.
 | [B64-text](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/B64.md)   | These functions are used to either encode/decode scripts in Base64. 
