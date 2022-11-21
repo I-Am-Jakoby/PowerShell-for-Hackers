@@ -15,7 +15,7 @@
 # NS-Lookup
 
 <p align="center">
-      <a href="https://www.youtube.com/watch?v=bPkBzyEnr-w">
+      <a href="https://youtu.be/yn3t4e-dq2A">
         <img src=https://i.ytimg.com/vi/bPkBzyEnr-w/hqdefault.jpg width="300" alt="Python" />
       </a>
       <br>YouTube Tutorial	
