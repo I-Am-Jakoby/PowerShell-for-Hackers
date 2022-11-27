@@ -31,20 +31,6 @@ This function can be used to retrieve the browsing history and bookmarks from ed
 
 In this function we will pass the browser name and data type (history/bookmarks) as parameter to retrieve the intended data
 
-SYNTAX:
-
-```
-Get-BrowserData -Browser "edge" -DataType "history"
-
-Get-BrowserData -Browser "edge" -DataType "bookmarks"
-
-Get-BrowserData -Browser "chrome" -DataType "history"
-
-Get-BrowserData -Browser "chrome" -DataType "bookmarks"
-
-Get-BrowserData -Browser "firefox" -DataType "history"
-```
-
 ```
 function Get-BrowserData {
 
@@ -78,6 +64,19 @@ function Get-BrowserData {
         }
     } 
 }
+```
+SYNTAX:
+
+```
+Get-BrowserData -Browser "edge" -DataType "history"
+
+Get-BrowserData -Browser "edge" -DataType "bookmarks"
+
+Get-BrowserData -Browser "chrome" -DataType "history"
+
+Get-BrowserData -Browser "chrome" -DataType "bookmarks"
+
+Get-BrowserData -Browser "firefox" -DataType "history"
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
