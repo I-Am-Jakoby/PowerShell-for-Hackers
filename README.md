@@ -66,6 +66,7 @@ please feel free to reference this collection of functions we have gathered here
 | [Add-Network](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Add-Network.md)   | Use this function to add a network profile to your targets PC. Either SECURED or OPEN.
 | [Wifi-Pass](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Wifi-Info.md)   | Use these functions to enumerate your targets wifi and get their wifi passwords.
 | [Get-GeoLocation](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Get-GeoLocation.md)   | Use this function to get the Geo-Location of your target.
+| [Get-BrowserData](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers/blob/main/Functions/Get-BrowserData.md)   | Use this function to get the browser history and bookmarks from browsers
 
 ## Bonus Function
 | Function                                         | Description  
