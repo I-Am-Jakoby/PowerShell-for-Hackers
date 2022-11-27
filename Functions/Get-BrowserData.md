@@ -31,6 +31,8 @@ This function can be used to retrieve the browsing history and bookmarks from ed
 
 In this function we will pass the browser name and data type (history/bookmarks) as parameter to retrieve the intended data
 
+SYNTAX:
+
 ```
 Get-BrowserData -Browser "edge" -DataType "history"
 
