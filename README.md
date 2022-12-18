@@ -1,6 +1,6 @@
-<div align="center"><h3>Currently ranked #1 for most contributed payloads</h3></div>
+<div align="center"><h3>2022 Hak5 hacker of the Year</h3></div>
 
-![hak 5](https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/Assets/hak5-sub.png)
+![hak 5](https://github.com/I-Am-Jakoby/I-Am-Jakoby/raw/main/img/hak5-banner.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
