@@ -15,8 +15,8 @@
 # Get-BrowserData
 
 <p align="center">
-      <a href="https://www.youtube.com/watch?v=6lScbYNLtJ4&t">
-        <img src=https://i.ytimg.com/vi/6lScbYNLtJ4/hqdefault.jpg width="300" alt="Python" />
+      <a href="https://youtu.be/2qkgQAwDZgk">
+        <img src=https://i.ytimg.com/vi/2qkgQAwDZgk/maxresdefault.jpg width="300" alt="Python" />
       </a>
       <br>YouTube Tutorial	
 </p>
