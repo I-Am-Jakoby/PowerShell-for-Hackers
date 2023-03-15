@@ -41,7 +41,7 @@ function speak {
 
 [CmdletBinding()]
 param (	
-[Parameter (Position=0,Mandatory = $True)]
+[Parameter (Position=0,Mandatory = $True,ValueFromPipeline=$true)]
 [string]$Sentence
 ) 
 
