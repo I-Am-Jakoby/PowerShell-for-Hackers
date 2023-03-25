@@ -41,7 +41,7 @@ When the position of the cursor is different the function will break out of the 
 
 This is helpful if you are wanting to run a script once they return to their computer
 
-```
+```powershell
 function Target-Comes {
 Add-Type -AssemblyName System.Windows.Forms
 $originalPOS = [System.Windows.Forms.Cursor]::Position.X
@@ -70,7 +70,7 @@ This is helpful if you are trying to determine if the target is away to run a sc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-```
+```powershell
 function Target-Leaves {
 [CmdletBinding()]
 param (	
