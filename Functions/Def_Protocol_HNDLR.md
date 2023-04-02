@@ -1,5 +1,14 @@
-
+```powershell
+New-Item -Path "HKCR:\ps" -Force | Out-Null
+New-ItemProperty -Path "HKCR:\ps" -Name "(Default)" -Value "URL:ps Protocol" -PropertyType String -Force | Out-Null
+New-ItemProperty -Path "HKCR:\ps" -Name "URL Protocol" -Value "" -PropertyType String -Force | Out-Null
+New-ItemProperty -Path "HKCR:\ps\shell\open\command" -Name "(Default)" -Value '"$env:userprofile\Documents\myhandler.ps1" "%1"' `
+-PropertyType String -Force | Out-Null
 ```
+
+
+
+```powershell
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -w h -Ep Bypass -File "$env:userprofile\Documents\myhandler.ps1" "%1"
 ```
 
