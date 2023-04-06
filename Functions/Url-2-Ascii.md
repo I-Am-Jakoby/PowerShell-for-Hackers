@@ -10,7 +10,7 @@ $webURL = $args[0]
 ```
 
 ## URL ENCODING EXAMPLE
-```url
+```
 https://example.com/search?q=hello world&category=books?sort=asc
 
 
