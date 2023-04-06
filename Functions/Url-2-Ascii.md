@@ -6,7 +6,7 @@ $webURL = $args[0]
 
 ## Registry Key Value
 ```powershell
-"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -w h -NoP -Ep Bypass -File "$env:userprofile\Documents\myhandler.ps1" "%1"
+"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -w h -NoP -Ep Bypass -File "C:\temp\myhandler.ps1" "%1"
 ```
 
 ## URL ENCODING EXAMPLE
