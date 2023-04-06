@@ -9,6 +9,15 @@ $webURL = $args[0]
 "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -w h -NoP -Ep Bypass -File "$env:userprofile\Documents\myhandler.ps1" "%1"
 ```
 
+## URL ENCODING EXAMPLE
+```url
+https://example.com/search?q=hello world&category=books?sort=asc
+
+
+https://example.com/search?q=hello%20world%26category=books%3Fsort=asc
+```
+
+
 ## Define a function to convert URL-encoded characters to their ASCII value
 ```powershell
 function Convert-UrlEncodedToAscii {
