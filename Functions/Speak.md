@@ -48,7 +48,7 @@ param (
 $s=New-Object -ComObject SAPI.SpVoice
 $s.Voice = $s.GetVoices().Item(0)
 $s.Rate = -2
-$s.Speak($Sentence)
+$null = $s.Speak($Sentence)
 }
 ```
 
