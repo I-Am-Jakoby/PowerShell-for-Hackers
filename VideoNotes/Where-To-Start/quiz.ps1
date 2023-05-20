@@ -12,7 +12,6 @@ $roles = @{
     'Network Security Engineer' = 0
 }
 
-Write-Host "Please answer the following questions with Y for Yes and N for No:"
 
 # Each question adds points to different roles based on the answer
 $questions = @(
@@ -114,32 +113,27 @@ $questions = @(
     }
 )
 
-foreach ($question in $questions) {
-    $answer = Read-Host $question['Question']
-    if ($question['Scores'].ContainsKey($answer)) {
-        foreach ($role in $question['Scores'][$answer]) {
-            $roles[$role] += 1
-        }
-    }
-}
+$roles = @{} 
+Add-Type -AssemblyName System.Windows.Forms
+foreach ($question in $questions) { $msgBoxResult = [System.Windows.Forms.MessageBox]::Show($question['Question'], "Question", [System.Windows.Forms.MessageBoxButtons]::YesNo) 
+cls 
+if ($msgBoxResult -eq 'Yes') { foreach ($role in $question['Scores']['Y']) { if (!$roles.ContainsKey($role)) { $roles[$role] = 0 } $roles[$role] += 1 } } } 
 
-# Calculate the highest scored role
-$maxScore = 0
-$chosenRole = $null
-foreach ($role in $roles.Keys) {
-    if ($roles[$role] -gt $maxScore) {
-        $maxScore = $roles[$role]
-        $chosenRole = $role
-    }
-}
+# Calculate the highest scored role 
+
+$maxScore = 0 
+$chosenRole = $null 
+foreach ($role in $roles.Keys) { if ($roles[$role] -gt $maxScore) { $maxScore = $roles[$role] 
+$chosenRole = $role } }
 
 # Output the suggested role
 
-$chosenRole = "Payload Developer"
-
+#$chosenRole = "Bug Bounty Hunter"
+cls
 switch ($chosenRole) {
     'Bug Bounty Hunter' {
         Write-Host "As a Bug Bounty Hunter, you'll find vulnerabilities in systems and earn rewards!"
+        Start-Process https://github.com/I-Am-Jakoby/Youtube_Minus
     }
     'Malware Analyst' {
         Write-Host "As a Malware Analyst, you'll reverse-engineer malicious software to understand it!"
@@ -149,6 +143,7 @@ switch ($chosenRole) {
     }
     'Penetration Tester' {
         Write-Host "As a Penetration Tester, you'll attempt to breach systems to find their weaknesses!"
+
     }
     'Security Researcher' {
         Write-Host "As a Security Researcher, you'll explore new methods and techniques for securing systems!"
@@ -175,4 +170,4 @@ switch ($chosenRole) {
 
 }
 
-hackerQuiz
+# v.2
