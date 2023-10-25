@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="https://github.com/HackingMark/Assets/blob/main/Hackingmark_low.gif?raw=true" width="720" title="www.hak5.org">
+<p align="left">
+  <img src="https://github.com/HackingMark/Assets/blob/main/Hackingmark_low.gif?raw=true" width="360" title="www.hak5.org">
 </p>
 
 <!-- TABLE OF CONTENTS -->
