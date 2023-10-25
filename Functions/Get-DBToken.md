@@ -82,8 +82,6 @@ HackingMark
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Hak5](https://hak5.org/)
-* [UberGuidoZ](https://github.com/UberGuidoZ)
 
 ***
 
