@@ -1,5 +1,7 @@
 Import-Module -Name Pode, Pode.Web
 
+#$ver = "$PSVersionTable.psversion.major"
+
 $ver = "7"
                                 
 $iPID = $pid
@@ -44,7 +46,7 @@ Set-PodeWebHomePage -Layouts @(
 		# Mock user data store
 		$users = @{
 			'Jakoby' = @{
-				ID = 'jako302'
+				ID = 'Jako302'
 				Name = 'Jakoby'
 				Type = 'Human'
 				Password = 'password' # Replace with actual password
