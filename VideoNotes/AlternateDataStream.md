@@ -55,3 +55,30 @@ Persistence refers to techniques that allow malware to remain active or automati
 - **Monitoring System Changes**: Audit registry, tasks, and configurations regularly.
 - **User Awareness**: Educate on the risks of unknown files or scripts.
 - **Regular System Audits**: Check for hidden streams and anomalies periodically.
+
+
+```powershell
+function Get-AlternateDataStreamContent {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$FilePath
+    )
+
+    # Check if the file exists
+    if (-not (Test-Path -Path $FilePath)) {
+        Write-Error "File not found: $FilePath"
+        return
+    }
+
+    # Get all streams from the file
+    $streams = Get-Item -Path $FilePath -Stream *
+
+    # Loop through each stream and display its content
+    foreach ($stream in $streams) {
+        if ($stream.Stream -ne ':$DATA') { # Exclude the default data stream
+            Write-Host "Reading content from stream: $($stream.Stream)"
+            Get-Content -Path $FilePath -Stream $stream.Stream
+        }
+    }
+}
+```
