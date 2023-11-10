@@ -122,3 +122,47 @@ function Get-AlternateDataStreamContent {
     }
 }
 ```
+
+```powershell
+function Find-FilesWithADS {
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$Directory
+    )
+
+    # Check if the directory exists
+    if (-not (Test-Path -Path $Directory)) {
+        Write-Error "Directory does not exist."
+        return
+    }
+
+    # Collect all files in the directory
+    $files = Get-ChildItem -Path $Directory -Recurse -File
+
+    # Initialize an array to hold files with ADS
+    $filesWithADS = @()
+
+    foreach ($file in $files) {
+        # Checking for alternative data streams
+        $ads = Get-Item -Path "$($file.FullName)" -Stream * -ErrorAction SilentlyContinue | 
+               Where-Object { $_.Stream -ne ':$DATA' -and $_.Stream -ne 'Zone.Identifier' }
+        
+        if ($ads) {
+            # Creating a custom object for each file with ADS
+            foreach ($stream in $ads) {
+                $obj = New-Object PSObject -Property @{
+                    FileName = $file.FullName
+                    StreamName = $stream.Stream
+                    StreamSize = $stream.Length
+                }
+
+                # Adding the custom object to the array
+                $filesWithADS += $obj
+            }
+        }
+    }
+
+    # Return the array of objects
+    return $filesWithADS
+}
+```
