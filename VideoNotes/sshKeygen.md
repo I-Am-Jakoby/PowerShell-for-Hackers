@@ -155,7 +155,7 @@ $generateButton.Add_Click({
         }
     }
 
-    $sshKeygenCommand = "ssh-keygen -t $keyType -b 4096 -C `"$email`" -f `"$keyPath`" -N `""`"
+    $sshKeygenCommand = {ssh-keygen -t $keyType -b 4096 -C "$email" -f "$keyPath" -N ""}
     Invoke-Expression $sshKeygenCommand
 
     # Read and display the public key
