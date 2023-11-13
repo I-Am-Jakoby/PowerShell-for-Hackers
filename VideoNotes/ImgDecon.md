@@ -1,6 +1,4 @@
 
-
-```powershell
 # Load required assemblies
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
@@ -73,4 +71,3 @@ foreach ($key in $metadata.Keys) {
 # Show the form
 $form.ShowDialog()
 
-```
