@@ -46,7 +46,7 @@ $pictureBox.BackColor = [System.Drawing.Color]::Transparent # Optional, for Pict
 $panel.Controls.Add($pictureBox)
 
 # Load and display image
-$imagePath = "C:\Users\micha\Desktop\zsecurity-first.png" # Use your specified image path
+$imagePath = "C:\Users\micha\Desktop\zsec.png" # Use your specified image path
 $pictureBox.Image = [System.Drawing.Image]::FromFile($imagePath)
 
 # Get and display image metadata
