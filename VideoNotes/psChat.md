@@ -89,10 +89,10 @@ $buttonSettings = Create-Button -text 'Settings' -top ($initialButtonTop + 3 * $
 $form.Controls.Add($buttonSettings)
 
 # Event handlers for buttons (placeholders for actual functionality)
-$buttonSearch.Add_Click({ # Add search functionality here })
-$buttonSendFile.Add_Click({ # Add file sending functionality here })
-$buttonClearChat.Add_Click({ $richTextBoxDisplay.Clear() })
-$buttonSettings.Add_Click({ # Add settings functionality here })
+#$buttonSearch.Add_Click({ # Add search functionality here })
+#$buttonSendFile.Add_Click({ # Add file sending functionality here })
+#$buttonClearChat.Add_Click({ $richTextBoxDisplay.Clear() })
+#$buttonSettings.Add_Click({ # Add settings functionality here })
 
 # Show the form
 $form.ShowDialog()
