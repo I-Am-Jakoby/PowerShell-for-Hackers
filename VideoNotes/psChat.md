@@ -45,5 +45,13 @@ $buttonSend.Add_Click({
     $richTextBoxDisplay.ScrollToCaret()
 })
 
+# Adding a Status Bar to the existing form
+$statusBar = New-Object System.Windows.Forms.StatusBar
+$form.Controls.Add($statusBar)
+
+# Update the status bar with messages
+$statusBar.Text = "Connected" # This can be dynamically updated based on application status
+
+
 # Show the form
 $form.ShowDialog()
