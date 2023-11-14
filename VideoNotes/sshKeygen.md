@@ -61,6 +61,7 @@ Add-Type -AssemblyName System.Windows.Forms
 $form = New-Object System.Windows.Forms.Form
 $form.Text = 'SSH Key Generator'
 $form.Size = New-Object System.Drawing.Size(350,550)
+$form.BackColor = [System.Drawing.Color]::FromArgb(45, 45, 48)
 $form.StartPosition = 'CenterScreen'
 
 # Email Label and TextBox
