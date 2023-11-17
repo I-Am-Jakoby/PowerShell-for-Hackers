@@ -1,3 +1,4 @@
+```powershell
 function Invoke-ScriptBlockAtPosition {
     param (
         [Parameter(Mandatory)]
@@ -23,3 +24,18 @@ function Invoke-ScriptBlockAtPosition {
         $Host.UI.RawUI.CursorPosition = $originalPosition
     }
 }
+
+```
+
+
+```powershell
+# Example script block
+$scriptBlock = {
+    Write-Host "This is a test output."
+    # Additional commands can be added here
+}
+
+# Invoke the script block at position (X: 10, Y: 5)
+Invoke-ScriptBlockAtPosition -ScriptBlock $scriptBlock -X 10 -Y 5
+
+```
