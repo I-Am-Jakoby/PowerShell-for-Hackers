@@ -1,3 +1,4 @@
+```powershell
 function Send-TcpMessage {
     param(
         [Parameter(Mandatory = $true)]
@@ -26,3 +27,4 @@ function Send-TcpMessage {
         Write-Error "⚠️ Error in sending message: $($_.Exception.Message)"
     }
 }
+```
