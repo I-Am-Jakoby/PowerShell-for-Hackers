@@ -22,7 +22,7 @@ function Send-TcpMessage {
         $Stream.Close()
         $Socket.Close()
 
-        Write-Output "✔️ Message sent to $TargetIP:$TargetPort."
+        Write-Output "✔️ Message sent to $TargetIP : $TargetPort."
     } catch {
         Write-Error "⚠️ Error in sending message: $($_.Exception.Message)"
     }
