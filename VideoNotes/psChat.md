@@ -1,3 +1,4 @@
+```powershell
 # Load necessary assembly for Windows Forms
 Add-Type -AssemblyName System.Windows.Forms
 
@@ -96,3 +97,5 @@ $form.Controls.Add($buttonSettings)
 
 # Show the form
 $form.ShowDialog()
+```
+
