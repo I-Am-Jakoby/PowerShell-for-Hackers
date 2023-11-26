@@ -25,6 +25,7 @@ $cmdletAliases = Get-Command -CommandType Cmdlet |
                      }
                  } | Where-Object Alias
 
+
     # Convert the script block to string
     $scriptContent = $ScriptBlock.ToString()
 
