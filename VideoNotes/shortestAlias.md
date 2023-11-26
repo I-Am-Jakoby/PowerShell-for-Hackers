@@ -8,19 +8,22 @@ function Replace-CmdletsWithAliases {
         [ScriptBlock]$ScriptBlock
     )
 
-    # Get a list of all cmdlets and their aliases
-    $cmdletAliases = Get-Command -CommandType Cmdlet | 
-                     ForEach-Object { 
-                         $cmdletName = $_.Name
-                         $aliases = @(Get-Alias -Definition $cmdletName -ErrorAction SilentlyContinue).Name
-                         if ($aliases) {
-                             $shortestAlias = ($aliases | Sort-Object { $_.Length })[0]
+# Get a list of all cmdlets and their aliases
+$cmdletAliases = Get-Command -CommandType Cmdlet | 
+                 ForEach-Object { 
+                     $cmdletName = $_.Name
+                     $aliases = @(Get-Alias -Definition $cmdletName -ErrorAction SilentlyContinue).Name
+                     if ($aliases) {
+                         # Filter out single-letter aliases and select the most appropriate alias
+                         $appropriateAlias = $aliases | Where-Object { $_.Length -gt 1 } | Sort-Object Length | Select-Object -First 1
+                         if ($appropriateAlias) {
                              [PSCustomObject]@{
                                  Name = $cmdletName
-                                 Alias = $shortestAlias
+                                 Alias = $appropriateAlias
                              }
                          }
-                     } | Where-Object Alias
+                     }
+                 } | Where-Object Alias
 
     # Convert the script block to string
     $scriptContent = $ScriptBlock.ToString()
