@@ -1,6 +1,6 @@
 function Start-TcpListener {
     param(
-        [int]$Port = 2222,
+        [int]$Port = 80,
         [string]$LogFile = "root\logs\log.txt"
     )
 
