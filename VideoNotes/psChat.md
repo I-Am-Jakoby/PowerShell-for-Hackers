@@ -51,7 +51,7 @@ $statusLabel1 = New-Object System.Windows.Forms.ToolStripStatusLabel
 $statusLabel1.Text = "Status: "
 $statusLabel1.ForeColor = [System.Drawing.Color]::White
 $statusLabel2 = New-Object System.Windows.Forms.ToolStripStatusLabel
-$statusLabel2.Text = "Connected"
+$statusLabel2.Text = "Connected ✅"
 $statusLabel2.ForeColor = [System.Drawing.Color]::GreenYellow
 $statusStrip.Items.Add($statusLabel1)
 $statusStrip.Items.Add($statusLabel2)
