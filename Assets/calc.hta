@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <hta:application id="test" />
+    <script>
+        var shell = new ActiveXObject("WScript.Shell");
+        shell.Run("powershell -nop start calc", 0);
+        window.close();
+    </script>
+</head>
+<body>
+</body>
+</html>
