@@ -2,10 +2,10 @@
 <html>
 <head>
     <hta:application id="test" />
-    <script>
-        var shell = new ActiveXObject("WScript.Shell");
-        shell.Run("powershell -nop start calc", 0);
-        window.close();
+    <script type="text/vbscript">
+        Set shell = CreateObject("WScript.Shell")
+        shell.Run "powershell.exe -nop -w hidden -c Start-Process calc", 0
+        window.close
     </script>
 </head>
 <body>
