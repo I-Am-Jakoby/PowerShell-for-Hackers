@@ -1,19 +1,12 @@
 <html>
 <head>
-  <hta:application id="app" applicationname="CalculatorLauncher" />
-  <script type="text/javascript">
-    function runCalc() {
-      try {
-        var shell = new ActiveXObject("WScript.Shell");
-        shell.Run("calc.exe");
-        window.close();
-      } catch (e) {
-        alert("An error occurred: " + e.message);
-      }
-    }
-    window.onload = runCalc;
-  </script>
+<HTA:APPLICATION ID="HelloExample">
+<script language="jscript">
+        var c = "cmd.exe /c calc.exe"; 
+        new ActiveXObject('WScript.Shell').Run(c);
+</script>
 </head>
 <body>
+<script>self.close();</script>
 </body>
 </html>
